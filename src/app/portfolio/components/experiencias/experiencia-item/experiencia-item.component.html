@@ -1,0 +1,12 @@
+<div class="card-exp">
+    <h3>{{ item.cargo }}</h3>
+
+    <h6>{{ item.nomeEmpresa }}</h6>
+
+    <p>
+        {{ item.dataInicio | date:'dd/MM/yyyy' }} até
+        {{ item.dataFim | date:'dd/MM/yyyy' }}
+    </p>
+
+    <p>{{ item.descricao }}</p>
+</div>

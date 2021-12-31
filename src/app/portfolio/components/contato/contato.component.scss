@@ -1,0 +1,32 @@
+.contato-container {
+    margin-top: 2px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.div-contatos {
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
+.div-contatos div {
+    margin-left: 2%;    
+}
+
+@media (max-width: 35em) {
+    .div-contatos {
+        margin-left: 40%;
+        margin-bottom: 2%;
+    }
+}
+
+img:hover {
+    cursor: pointer;
+}

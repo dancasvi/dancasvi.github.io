@@ -1,0 +1,12 @@
+<button class="mobile-nav-toggle" aria-controls="primary-navigation" (click)="toggleMenu()"
+aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+<nav class="menu-container">
+    <ul id="primary-navigation" class="primary-navigation"
+    [ngClass]="exibirMenu ? 'show-menu' : 'hide-menu'">
+        <li class="item-inicio" (click)="navegar('inicio')"><span>Início</span></li>
+        <li (click)="navegar('experiencias')"><span>Experiências</span></li>
+        <li (click)="navegar('projetos')"><span>Projetos</span></li>
+        <li (click)="navegar('contato')"><span>Contato</span></li>
+    </ul>
+</nav>
