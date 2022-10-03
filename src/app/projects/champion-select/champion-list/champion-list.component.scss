@@ -1,0 +1,20 @@
+.champion-list-container {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.champion-list-container img {
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.champion-avatar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,170 @@
+<div>
+    <form [formGroup]="form">
+        <div class="name-container">
+            <label for="name">Name: </label>
+            <input type="text" formControlName="name"/>
+        </div>
+
+        <div class="background-container">
+            <label for="background">Background: </label>
+            <button (click)="toggleBackgroundPicker()">Toggle background</button>
+    
+            <div *ngIf="showBackgroundPicker">
+                <div>
+                    <input type="radio"
+                    formControlName="background" value="blue">
+                    <img src="../../../assets/card-maker-images/backgrounds/blue.png"/>
+                </div>
+                
+                <div>
+                    <input type="radio"
+                    formControlName="background" value="pink">
+                    <img src="../../../assets/card-maker-images/backgrounds/pink.png"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="trainer-container">
+            <label for="trainer">Trainer: </label>
+            <button (click)="toggleTrainerPicker()">Toggle trainer</button>
+    
+            <div *ngIf="showTrainerPicker">
+                <div class="row">
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="red">
+                        <img src="../../../assets/card-maker-images/trainers/red.webp"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="ash">
+                        <img src="../../../assets/card-maker-images/trainers/ash.png"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="blue">
+                        <img src="../../../assets/card-maker-images/trainers/blue.webp"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="gold">
+                        <img src="../../../assets/card-maker-images/trainers/gold.jfif"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="green">
+                        <img src="../../../assets/card-maker-images/trainers/green.webp"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="ruby">
+                        <img src="../../../assets/card-maker-images/trainers/ruby.webp"/>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="radio"
+                        formControlName="trainer" value="sapphire">
+                        <img src="../../../assets/card-maker-images/trainers/sapphire.webp"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pokemon-container">
+            <div>
+                <label for="pokemon1">Pokemon 1</label>
+                <input list="pokemons" formControlName="pokemon1">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+                   
+            <div>
+                <label for="pokemon2">Pokemon 2</label>
+                <input list="pokemons" formControlName="pokemon2">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+
+            <div>
+                <label for="pokemon3">Pokemon 3</label>
+                <input list="pokemons" formControlName="pokemon3">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+
+            <div>
+                <label for="pokemon4">Pokemon 4</label>
+                <input list="pokemons" formControlName="pokemon4">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+                   
+            <div>
+                <label for="pokemon5">Pokemon 5</label>
+                <input list="pokemons" formControlName="pokemon5">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+
+            <div>
+                <label for="pokemon6">Pokemon 6</label>
+                <input list="pokemons" formControlName="pokemon6">
+                <datalist id="pokemons">
+                    <option *ngFor="let poke of pokemonList">{{poke.name}} </option>
+                </datalist>   
+            </div>
+        </div>
+
+        <div>
+            <button (click)="generateCard()">Generate</button>
+        </div>
+    </form>
+</div>
+
+<div class="generated-card-container" [ngClass]="{'showGeneratedCard':generatedCard.valid === false}">
+    <div>
+        <span id="selected-name">{{generatedCard.name}}</span>
+        <img id="selected-background" src={{generatedCard.background}} />
+        <img id="selected-trainer" src={{generatedCard.trainer}} />
+
+        <div class="selected-pokemon">
+            <div class="row">
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon1}} />
+                </div>
+
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon2}} />
+                </div>
+
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon3}} />
+                </div>
+            </div>
+
+            <div class="row second-line">
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon4}} />
+                </div>
+
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon5}} />
+                </div>
+
+                <div class="col-4">
+                    <img src={{generatedCard.pokemon6}} />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

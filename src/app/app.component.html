@@ -1,35 +1,44 @@
-<div>
-    <app-menu (eventoNavegar)="navegar($event)"></app-menu>
-</div>
-
-<div id="inicio" class="img-flutuando">
-    <div id="titulo">
-        <h2>Daniel Castagna Vieira</h2>
-        <p>
-            Desenvolvedor WEB
-        </p>
+<!-- <div id="main-container">
+    <div>
+        <app-menu (eventoNavegar)="navegar($event)"></app-menu>
+    </div>
+    
+    <div id="inicio" class="img-flutuando">
+        <div id="titulo">
+            <h2>Daniel Castagna Vieira</h2>
+            <p>
+                Desenvolvedor WEB
+            </p>
+        </div>
+    </div>
+    
+    <hr/>
+    
+    <div id="experiencias">
+        <app-experiencias></app-experiencias>
+    </div>
+    
+    <hr/>
+    
+    <div id="projetos">
+        <app-projetos></app-projetos>
+    </div>
+    
+    <hr/>
+    
+    <div id="contato">
+        <app-contato></app-contato>
+    </div>
+    
+    <div class="btn-top">
+        <img (click)="navegar('inicio')" src="./../assets/shared/icon-up-2.png"/>
     </div>
 </div>
 
-<hr/>
+<div>
+    <app-admin></app-admin>
+</div> -->
 
-<div id="experiencias">
-    <app-experiencias></app-experiencias>
-</div>
-
-<hr/>
-
-<div id="projetos">
-    <app-projetos></app-projetos>
-</div>
-
-<hr/>
-
-<div id="contato">
-    <app-contato></app-contato>
-</div>
-
-<div class="btn-top">
-    <!-- <button (click)="navegar('inicio')">Top ^</button> -->
-    <img (click)="navegar('inicio')" src="./../assets/shared/icon-up-2.png"/>
+<div>
+    <router-outlet></router-outlet>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild } from "@angular/core";
 import { ExperienciaItem, ExperienciaWrapperDTO } from "../../models/experiencias.model";
 import { ExperienciasService } from "./experiencias.service";
 
@@ -7,7 +7,7 @@ import { ExperienciasService } from "./experiencias.service";
     templateUrl: 'experiencias.component.html',
     styleUrls: ['experiencias.component.scss']
 })
-export class ExperienciasComponent implements OnInit {    
+export class ExperienciasComponent implements OnInit, AfterViewInit {    
     itemExp = new ExperienciaItem();
 
     listaExp: ExperienciaItem[] = [];
@@ -25,5 +25,18 @@ export class ExperienciasComponent implements OnInit {
                 console.log(e);
             }
         );
+    }
+
+    @ViewChild('items') input;
+
+    public ngAfterViewInit() {
+        this.input.nativeElement.addEventListener("wheel", event => {
+            event.preventDefault();
+            if(event.deltaY > 0) {
+                event.target.scrollBy(300, 0);
+            } else {
+                event.target.scrollBy(-300, 0);
+            }
+        });
     }
 }

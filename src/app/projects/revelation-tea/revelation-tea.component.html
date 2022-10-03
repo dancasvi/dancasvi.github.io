@@ -1,0 +1,28 @@
+<div class="tea-container">
+    <div class="prof-oak-container">
+        <img src="https://archives.bulbagarden.net/media/upload/thumb/3/3e/Lets_Go_Pikachu_Eevee_Professor_Oak.png/180px-Lets_Go_Pikachu_Eevee_Professor_Oak.png"/>
+        <div class="message-container">
+            <!-- <p>Hello, are you a boy or a girl ?</p> -->
+            <p>
+                {{ msg1 }}
+            </p>
+
+            <p *ngIf="msg2 != ''">
+                {{ msg2 }}
+            </p>
+
+            <p *ngIf="msg3 != ''">
+                {{ msg3 }}
+            </p>
+
+            <p *ngIf="msg4 != ''">
+                {{ msg4 }}
+            </p>
+        </div>
+
+        <div class="answer-container" *ngIf="showButtons">
+            <button id="btn-boy">Daniel</button>
+            <button id="btn-girl">Manuela</button>
+        </div>
+    </div>
+</div>

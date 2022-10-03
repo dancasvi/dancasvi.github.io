@@ -1,0 +1,26 @@
+<div>
+    <button>Novo</button>
+    <table *ngIf="tableOptions">
+        <thead>
+            <th *ngFor="let column of tableOptions.columns">
+                {{column}}
+            </th>
+            <td>
+                Ações
+            </td>
+        </thead>
+
+        <tr *ngFor="let row of tableOptions.rows">
+            <td *ngFor="let element of row | keys">
+                {{element.value}}
+            </td>
+
+            <td class="action-cell">
+                <!-- Ver / Editar / Excluir -->
+                <i class="bi bi-search" (click)="onActionClick('search', row)"></i>
+                <!-- <i class="bi bi-pencil-fill" (click)="onActionClick('edit')"></i>
+                <i class="bi bi-x-square-fill remove-icon" (click)="onActionClick('remove')"></i> -->
+            </td>
+        </tr>
+    </table>
+</div>

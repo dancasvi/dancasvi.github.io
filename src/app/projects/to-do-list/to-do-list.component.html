@@ -1,0 +1,41 @@
+<div>
+    <div>
+        <h4>My TODO List</h4>
+        <div>
+            <form [formGroup]="formGroup">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="text" class="form-control" placeholder="Title..."
+                        formControlName="title">
+                    </div>
+
+                    <div class="col-3">
+                        <button (click)="addItem()">Add</button>
+                    </div>
+                </div>                
+            </form>
+        </div>
+    </div>
+    
+    <div>
+        <table>
+            <thead>
+                <th>Task</th>
+                <th>Actions</th>
+            </thead>
+
+            <tr *ngFor="let t of todoList">
+                <td id="{{t}}" class="task-item">
+                    {{t}}
+                </td>
+
+                <td class="task-actions">
+                    <!-- <a (click)="concludeItem(t)">Conclude</a> -->
+                    <i (click)="concludeItem(t)" class="bi bi-check-square"></i>
+                    <i (click)="removeItem(t)" class="bi bi-x-square"></i>
+                    <!-- <a (click)="removeItem(t)">Remove</a> -->
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

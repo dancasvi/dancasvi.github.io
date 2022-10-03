@@ -57,9 +57,9 @@
     .mobile-nav-toggle {
         display: block;
         position: absolute;
-        z-index: 9999;
-        background: url('./../../../../../assets/shared/menu1.png');
-        // border: 0;
+        z-index: 9999;    
+        background: url("../../../../../assets/shared/menu_system.png");
+        background-size: cover;
         width: 2rem;
         aspect-ratio: 1;
         top: 2rem;

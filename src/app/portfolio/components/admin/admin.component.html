@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <nav id="menu-h">
+            <ul>
+                <li (click)="navigateTo(0)">Experiência</li>
+                <li (click)="navigateTo(1)">Projeto</li>
+                <li (click)="navigateTo(2)">Entrar</li>
+            </ul>
+        </nav>
+    </div>    
+
+    <div>
+        <div *ngIf="selectedMenu == 0">
+            <app-simple-table [tableOptions]="table" (actionEvent)="onAction($event)"></app-simple-table>
+            
+            <div *ngIf="formFields">
+                <app-simple-add-form [formFields]="formFields | async " [data]="data"></app-simple-add-form>
+            </div>            
+        </div>
+
+        <div *ngIf="selectedMenu == 1">
+            gerenciar projetos
+        </div>
+
+        <div *ngIf="selectedMenu == 2">
+            login
+        </div>
+    </div>
+</div>
