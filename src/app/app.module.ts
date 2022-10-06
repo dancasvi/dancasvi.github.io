@@ -19,6 +19,7 @@ import { SimpleAddFormModule } from './portfolio/components/shared/simple-add-fo
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardMakerModule } from './projects/card-maker/card-maker.module';
 import { ToDoListModule } from './projects/to-do-list/to-do-list.module';
+import { ChatInboxModule } from './projects/chat-inbox/chat-inbox.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ToDoListModule } from './projects/to-do-list/to-do-list.module';
     RevelationTeaModule,
     AdminModule,    
     MainPageModule,
-    ToDoListModule,    
+    ToDoListModule,
+    ChatInboxModule,
     //shared components
     SimpleTableModule,
     SimpleAddFormModule
