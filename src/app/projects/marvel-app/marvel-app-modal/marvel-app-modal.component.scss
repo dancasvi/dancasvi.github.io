@@ -1,0 +1,78 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.modal-container {
+    background-color: red;
+    width: 90%;    
+    position: fixed;
+    right: 0;
+}
+
+.collapse-modal-container {
+    border-left: 20px solid black;
+    opacity: 0.4;
+    height: 50vh;    
+}
+
+.collapse-modal-container i {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    color: white;
+    width: 1em;
+    height: 1em;
+    font-size: 20px;
+}
+
+.thumbnail-container {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.thumbnail-container img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    border: 1px solid white;
+}
+
+.thumbnail-container p {
+    width: 85%;
+    height: 35%;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    color: yellow;
+    overflow-x: hidden;
+}
+
+.thumbnail-container h4 {
+    position: absolute;
+    left: 10%;
+    top: 1%;
+    color: yellow;
+}
+
+.show-menu {
+    transform: translate(0%);
+    transition: transform 750ms ease-in;
+}
+
+.hide-menu {
+    transform: translate(95%);
+    transition: transform 750ms ease-out;    
+}
+
+.nothing-selected img {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    border: none;
+}

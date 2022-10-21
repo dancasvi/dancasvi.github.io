@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { ProjetoItem } from "../../models/projetos.model";
+// import { ProjetoItem } from "../../models/projetos.model";
+import { ProjetoItem } from "./projetos.model";
+import { ProjetosService } from "./projetos.service";
 
 @Component({
     selector: 'app-projetos',
@@ -7,14 +9,26 @@ import { ProjetoItem } from "../../models/projetos.model";
     styleUrls: ['projetos.component.scss']
 })
 export class ProjetosComponent implements OnInit {
-    itemProj = new ProjetoItem(0, '', [''], '');
+    itemProj// = new ProjetoItem(0, '', [''], '');
 
     listaProj: ProjetoItem[] = []
 
+    constructor(
+        private service: ProjetosService
+    ) {}
+
     ngOnInit(): void {
-        for(let i = 0; i < 4; i++) {
-            const proj = new ProjetoItem(i, 'Projeto ' + (i+1), [''], 'img');
-            this.listaProj.push(proj);
-        }
+        this.service.buscarProjetos().subscribe(
+            (dados) => {
+                console.log(dados);
+
+                dados.data.forEach(element => {                                        
+                    this.listaProj.push(element);
+                });
+            },
+            (e) => {
+                console.log(e);
+            }
+        );
     }
 }

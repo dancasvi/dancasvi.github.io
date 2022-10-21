@@ -12,19 +12,18 @@ img {
 }
 
 .div-contatos {
-    margin-left: 45%;
     margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center; 
 }
 
 .div-contatos div {
-    margin-left: 2%;    
-}
-
-@media (max-width: 35em) {
-    .div-contatos {
-        margin-left: 40%;
-        margin-bottom: 2%;
-    }
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
 }
 
 img:hover {

@@ -1,3 +1,25 @@
-<div class="card-exp">
-    <h3>{{ item.nome }}</h3>
+<div class="card-proj">    
+    <div class="app-name-container">
+        <h3>{{ item.nome }}</h3>
+    </div>
+
+    <div class="app-image-container">
+        <div class="app-image">
+            <img src={{item.icone}}/>
+        </div>        
+    </div>
+
+    <div class="app-description-container">
+        <h4>Descrição</h4>
+        <p>{{ item.descricao }}</p>
+    </div>
+
+    <div class="app-technologies-container">
+        <h4>Tecnologias</h4>
+        <p>{{ item.tecnologias }}</p>
+    </div>
+
+    <div class="app-actions">
+        <i class="bi bi-eye-fill" (click)="navigateToApp(item.rota)">&nbsp;Acessar "{{ item.nome }}"</i>                
+    </div>
 </div>

@@ -22,7 +22,6 @@ export class ExperienciasComponent implements OnInit, AfterViewInit {
                 }                
             },
             (e) => {
-                console.log(e);
             }
         );
     }

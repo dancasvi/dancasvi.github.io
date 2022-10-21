@@ -1,7 +1,36 @@
-.card-exp {
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.card-proj {
     margin-left: 2%;
     margin-top: 2%;
     padding: 5%;
-    border: 1px solid black;
-    border-radius: 10px;
+}
+
+.app-name-container {
+    width: 100%;
+    display:inline-block;
+    text-align: center;
+}
+
+.app-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.app-image-container img {
+    width: 100px;
+    height: 100px;    
+}
+
+.app-actions {
+    position: relative;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-left: 0%;
+}
+
+.app-actions i {
+    cursor: pointer;
 }

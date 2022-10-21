@@ -1,0 +1,27 @@
+<div class="modal-container" [ngClass]="showModal ? 'show-menu' : 'hide-menu'">    
+    <div class="collapse-modal-container">
+        <i *ngIf="showModal" class="bi bi-chevron-double-right"></i>
+
+        <i *ngIf="!showModal" class="bi bi-chevron-double-left"></i>
+    </div>
+
+    <div class="thumbnail-container" (click)="toggleModal()">
+        <h4 *ngIf="element.title">
+            <!-- Spider-Man (Peter Parker) -->
+            {{element.title}}
+        </h4>
+
+        <!-- <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b.jpg"/> -->
+        <img *ngIf="element.imgUrl" src="{{element.imgUrl}}"/>
+
+        <p *ngIf="element.description">
+            <!-- Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people. -->
+            {{element.description}}
+        </p>
+
+        <div *ngIf="!element.title" class="nothing-selected">
+            <h4>Nothing selected yet.</h4>
+            <img src="https://cdn.shopify.com/s/files/1/0102/2731/8835/files/Excelsior-By-Stan-Lee-Logo_480x480.png?v=1597719468"/>
+        </div>
+    </div>
+</div>

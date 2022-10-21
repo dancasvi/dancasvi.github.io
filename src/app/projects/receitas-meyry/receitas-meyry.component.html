@@ -1,0 +1,48 @@
+<div class="app-container">
+    <div class="filters-container">
+        <form [formGroup]="form">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <label>Nome</label><br>
+                    <input type="text" formControlName="name"/>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <label>Categoria</label><br>
+                    <input list="categories" formControlName="category">
+                    <datalist id="categories">
+                        <option *ngFor="let categ of categories">{{categ}} </option>
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <button>Filtrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<hr>
+    <div class="content-container">        
+        <div class="second-model">
+            <h4>Veja essas receitas de dar água na boca!</h4>
+            <div class="recipe-image-container">
+                <img src="https://www.simplyrecipes.com/thmb/9LF17Tb7n--s7YnSvKMw59Sfc1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Curtido-LEAD-4-b8886e74b39d4ba9aeb7a071d130a614.jpg"/>
+            </div>           
+
+            <div class="recipe-text-container">
+                <div *ngFor="let recipe of recipes">
+                    <div class="recipe-name-container">
+                        {{recipe.name}}
+                    </div>
+        
+                    <div class="recipe-prepTime-container">
+                        <i class="bi bi-stopwatch">{{recipe.prepTime}}</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

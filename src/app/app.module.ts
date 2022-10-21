@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardMakerModule } from './projects/card-maker/card-maker.module';
 import { ToDoListModule } from './projects/to-do-list/to-do-list.module';
 import { ChatInboxModule } from './projects/chat-inbox/chat-inbox.module';
+import { MarvelAppModule } from './projects/marvel-app/marvel-app.module';
+import { ReceitasMeyryModule } from './projects/receitas-meyry/receitas-meyry.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ChatInboxModule } from './projects/chat-inbox/chat-inbox.module';
     MainPageModule,
     ToDoListModule,
     ChatInboxModule,
+    MarvelAppModule,
+    ReceitasMeyryModule,
     //shared components
     SimpleTableModule,
     SimpleAddFormModule

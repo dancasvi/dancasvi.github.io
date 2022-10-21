@@ -1,0 +1,50 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.app-container {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+input, select {
+    width: 100%;
+}
+
+
+
+.filters-container {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 5%;
+    background-color: rgb(231, 231, 231);
+}
+
+//second model
+.recipe-image-container {
+    max-height: 150px;
+}
+
+.recipe-image-container img {   
+    width: 100px;
+    height: 100px;
+}
+
+.second-model, .recipe-image-container, .recipe-text-container {
+    display: inline-block;
+}
+
+.recipe-name-container {
+    position: relative;
+    top: -10px;
+    left: 15%;
+    font-size: 16px;
+}
+
+.recipe-prepTime-container {
+    position: relative;
+    top: 15px;
+    left: 15%;
+    font-size: 16px;
+}

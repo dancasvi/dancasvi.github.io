@@ -1,0 +1,108 @@
+<div class="marvel-loading" *ngIf="isLoading">
+    <img src="../../../assets/marvel-app-images/marvel-loading.gif"/>
+</div>
+
+<div class="marvel-app-container">
+    <div class="marvel-headings">
+        <h3>&nbsp; MARVEL EVERYTHING &nbsp;</h3>
+        <h4>
+            Curiosities about your favorite Marvel characters,
+            comics, authors and much more!
+        </h4>
+
+        <button (click)="resetAll()">Restart</button>
+    </div>
+
+    <div class="marvel-menu">
+        <button (click)="selectEntity('characters')" [disabled]="modal.showModal">Characters</button>
+
+        <button (click)="selectEntity('comics')" [disabled]="modal.showModal">Comics</button>
+    
+        <button (click)="selectEntity('creators')" [disabled]="modal.showModal">Creators</button>
+    
+        <button (click)="selectEntity('events')" [disabled]="modal.showModal">Events</button>
+    
+        <button (click)="selectEntity('series')" [disabled]="modal.showModal">Series</button>
+
+    </div>
+
+    <div class="marvel-filters" *ngIf="currentTable">
+        <!-- *ngIf="currentTable" -->
+        <h4>Find {{ currentTable ? currentTable : 'Elements'}}</h4>
+        <form [formGroup]="form">
+            <div class="row">                
+                <div class="col-sm-12 col-md-6 col-lg-3" *ngIf="currentTable == 'characters'">
+                    <label for="name">By Name starting with</label><br>
+                    <input type="text" formControlName="name" 
+                    placeholder="Starts with..." [readonly]="modal.showModal"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button (click)="findByName()" [disabled]="modal.showModal" *ngIf="currentTable == 'characters'">Find by name</button>
+                    <button (click)="findAll(currentTable)" [disabled]="modal.showModal">Find All</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="marvel-content" *ngIf="selectedTable.rows.length > 0">
+        <table>
+            <thead>
+                <th *ngFor="let column of selectedTable.columns">
+                    {{column}}
+                </th>
+                <th>Actions</th>
+            </thead>
+
+            <tr *ngFor="let row of selectedTable.rows">
+                <td>{{row.id}}</td>
+                <td *ngIf="selectedTable.tableName == 'characters'">
+                    {{row.name}}
+                </td>
+                <td *ngIf="selectedTable.tableName == 'comics'">
+                    {{row.title}}
+                </td>
+                <td *ngIf="selectedTable.tableName == 'creators'">
+                    {{row.fullName}}
+                </td>
+                <td *ngIf="selectedTable.tableName == 'events'">
+                    {{row.title}}
+                </td>
+                <td *ngIf="selectedTable.tableName == 'series'">
+                    {{row.title}}
+                </td>
+                <td>
+                    <i class="bi bi-search" (click)="seeDetails(row.id)"></i>
+                </td>
+            </tr>
+        </table>
+
+        <div class="marvel-pagination">
+            <div>
+                <i class="bi bi-chevron-double-left"></i>
+                <i class="bi bi-chevron-left" (click)="previousPage()"></i>
+            </div>
+            
+            <div class="marvel-pagination-pages">
+                <i *ngIf="currentPage > 1">{{ currentPage-1 }}</i>
+                <i id="current-page">{{ currentPage }}</i>
+                <i *ngIf="currentPage < totalResults">{{ currentPage+1 }}</i>
+            </div>
+
+            <div>
+                <i class="bi bi-chevron-right" (click)="nextPage()"></i>
+                <i class="bi bi-chevron-double-right"></i>
+            </div>            
+        </div>
+    </div>
+
+    <div class="marvel-footer">
+        Data provided by <a href="http://marvel.com" target="_blank" rel="noopener noreferrer">Marvel</a>. © 2014 Marvel        
+    </div>
+</div>
+
+<div class="modal-container">
+    <marvel-app-modal #modal [selected]="selectedElement"></marvel-app-modal>
+</div>

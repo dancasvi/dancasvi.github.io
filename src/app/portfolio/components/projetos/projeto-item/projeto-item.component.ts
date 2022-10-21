@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { Route, Router } from "@angular/router";
-import { ProjetoItem } from "src/app/portfolio/models/projetos.model";
-
+// import { ProjetoItem } from "src/app/portfolio/models/projetos.model";
+import { ProjetoItem } from '../projetos.model';
 @Component({
     selector: 'app-projeto-item',
     templateUrl: 'projeto-item.component.html',
@@ -9,10 +9,14 @@ import { ProjetoItem } from "src/app/portfolio/models/projetos.model";
 })
 export class ProjetoItemComponent implements OnInit {
 
-    @Input() item = new ProjetoItem(0, '', [''], '');
+    @Input() item;
 
     constructor(private router: Router){}
 
     ngOnInit(): void {
+    }
+
+    public navigateToApp(appRoute) {
+        this.router.navigate([appRoute]);
     }
 }

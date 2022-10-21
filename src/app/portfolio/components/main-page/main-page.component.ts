@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-main-page',
@@ -9,7 +10,10 @@ import { Component, Inject, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
     title = 'portfolio-definitivo';  
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
     this.navegar('inicio');
@@ -17,5 +21,9 @@ export class MainPageComponent implements OnInit {
 
   navegar(menuClicado: string) {
     this.document.getElementById(menuClicado)?.scrollIntoView({behavior: "smooth"});
+  }
+
+  goToPage() {
+    this.router.navigate(['marvel-app']);
   }
 }

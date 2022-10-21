@@ -1,8 +1,20 @@
-<div class="proj-container">
+<!-- <div class="proj-container">
     <h2>Projetos</h2>
     <div class="row">
         <div *ngFor="let proj of listaProj" class="col-lg-3 col-md-6 col-sm-12">
             <app-projeto-item [item]="proj"></app-projeto-item>
+        </div>
+    </div>
+</div> -->
+
+<div class="proj-container">
+    <div id="items-wrapper">
+        <h2>Projetos</h2>
+        <hr>
+        <div #items id="items">
+            <div *ngFor="let proj of listaProj" class="item">
+                <app-projeto-item [item]="proj"></app-projeto-item>
+            </div>
         </div>
     </div>
 </div>
