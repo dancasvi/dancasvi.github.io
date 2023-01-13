@@ -11,6 +11,7 @@ import { ExperienciasModule } from "../experiencias/experiencias.module";
 import { ProjetosModule } from "../projetos/projetos.module";
 import { MenuModule } from "../shared/menu/menu.module";
 import { SimpleTableModule } from "../shared/simple-table/simple-table.module";
+import { SobreModule } from "../sobre/sobre.module";
 import { MainPageComponent } from "./main-page.component";
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MainPageComponent } from "./main-page.component";
         ExperienciasModule,
         ProjetosModule,
         ContatoModule,
+        SobreModule,
         ChampionSelectModule,
         RevelationTeaModule,
         AdminModule,

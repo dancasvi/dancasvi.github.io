@@ -1,0 +1,58 @@
+//Desktop
+@media screen and (min-width: 850px) {
+    ul {
+        list-style: none;
+    }
+    
+    .menu {
+        position: relative;          
+        top: 5em;
+        left: 30%;
+        width: 40%;
+        height: 10em;
+        font-size: 35px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: #f5efef;
+    }
+    
+    .menu li {
+        margin-top: 10%;
+        background-color: #d8bfbf;
+        display:inline-block;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    .menu li span {
+        display: inline-block;
+        margin: 0;
+        line-height: 1em; 
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        background: linear-gradient(to right, #ffa500 50%, #ff6a00 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px white;
+    }
+
+    .menu li:hover {
+        cursor: pointer;
+        background-color: rgb(223, 74, 74);
+    }
+}
+
+//Smartphone
+@media screen and (max-width: 250px) {
+    .menu {
+        background-color: blue;
+    }
+}
+
+//Tablet
+@media screen and (min-width: 251px) and (max-width: 849px) {
+    .menu {
+        background-color: green;
+    }
+}

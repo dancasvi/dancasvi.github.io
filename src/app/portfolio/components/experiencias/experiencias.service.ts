@@ -6,6 +6,8 @@ import { CustomFormField } from "../shared/simple-add-form/custom-form-field";
 import { FormControl, FormGroup, ValidatorFn, Validators } from "@angular/forms";
 import { of } from "rxjs";
 
+const URL = 'http://dancasvi.com.br:21012';
+
 @Injectable({ providedIn: 'root' })
 export class ExperienciasService {
     constructor(private http: HttpClient) {
@@ -13,12 +15,12 @@ export class ExperienciasService {
     }
     
     buscarExperiencias() {
-        return this.http.get('http://dancasvi.com.br:21075/experiencias')
+        return this.http.get(`${URL}/experiencias`)
         .pipe(map((dados:ExperienciaWrapperDTO<ExperienciaItem[]>) => dados));
     }
 
     buscarExperienciaPorId(id) {
-      return this.http.get(`http://dancasvi.com.br:21075/experiencias/${id}`)
+      return this.http.get(`${URL}/experiencias/${id}`)
       .pipe(map((dados:ExperienciaWrapperDTO<ExperienciaItem>) => dados));
     }
 

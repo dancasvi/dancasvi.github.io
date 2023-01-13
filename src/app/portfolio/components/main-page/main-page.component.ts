@@ -24,6 +24,6 @@ export class MainPageComponent implements OnInit {
   }
 
   goToPage() {
-    this.router.navigate(['marvel-app']);
+    this.router.navigate(['champion-select']);
   }
 }

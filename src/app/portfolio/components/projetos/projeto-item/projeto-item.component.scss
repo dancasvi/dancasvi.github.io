@@ -34,3 +34,58 @@
 .app-actions i {
     cursor: pointer;
 }
+
+.app-percentage-container {
+    background-color: black;
+    width: 30%;
+    height: 12px;
+    border-radius: 10px;
+
+    position: relative;
+    left: 30%;
+}
+
+.percentage-bar {
+    background-color: rgb(63, 252, 63);
+    height: 6px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 10px 0 0 10px;
+}
+
+.percentage-text {
+    position: relative;
+    top: 5px;
+    left: 35%
+}
+
+//Desktop
+@media screen and (min-width: 850px) {
+    .app-percentage-container {
+        background-color: black;
+        width: 50%;
+        height: 12px;
+        border-radius: 10px;
+    
+        position: relative;
+        left: 25%;
+    }
+
+    .percentage-text {
+        position: relative;
+        top: 5px;
+        left: 0%
+    }
+}
+
+//Smartphone
+@media screen and (max-width: 350px) {
+
+}
+
+//Tablet
+@media screen and (min-width: 351px) and (max-width: 849px) {
+
+}

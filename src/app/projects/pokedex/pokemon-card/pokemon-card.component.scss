@@ -1,0 +1,232 @@
+//Desktop
+@media screen and (min-width: 850px) {
+    .card-container {
+        background-color: rgb(228, 222, 222);
+        width: 15vw;
+        height: 30vh;
+        border: 1px solid rgb(201, 198, 198);
+        position: relative;
+        left: 20%;
+        box-shadow: 5px 5px #888888;
+    }
+
+    .card-container:hover {
+        cursor: pointer;
+        animation: pulse 1s linear infinite;
+    }
+
+    .pokemon-image img {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 25%;
+    }
+
+    .pokemon-number, .pokemon-name, .pokemon-type {
+        position: relative;
+        left: 10%;
+    }
+
+    .pokemon-number span {
+        font-size: 10px;
+    }
+
+    .pokemon-name span {
+        font-size: 15px;
+    }
+}
+
+//Smartphone
+@media screen and (max-width: 350px) {
+    .card-container {
+        background-color: rgb(228, 222, 222);
+        width: 30vw;
+        height: 26vh;
+        border: 1px solid rgb(201, 198, 198);
+        position: relative;
+        left: 20%;
+        box-shadow: 5px 5px #888888;
+    }
+
+    .pokemon-number, .pokemon-name, .pokemon-type {
+        position: relative;
+        left: 10%;
+    }
+}
+
+//Tablet
+@media screen and (min-width: 351px) and (max-width: 849px) {
+    .card-container {
+        background-color: rgb(228, 222, 222);
+        width: 15vw;
+        height: 35vh;
+        border: 1px solid rgb(201, 198, 198);
+        position: relative;
+        left: 20%;
+        box-shadow: 5px 5px #888888;
+    }
+
+    .pokemon-image img {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 10%;
+    }
+
+    .pokemon-number, .pokemon-name, .pokemon-type {
+        position: relative;
+        left: 20%;
+    }
+
+    .pokemon-number span {
+        font-size: 10px;
+    }
+
+    .pokemon-name span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 349px) {
+    .card-container {
+        background-color: rgb(228, 222, 222);
+        width: 30vw;
+        height: 30vh;
+        border: 1px solid rgb(201, 198, 198);
+        position: relative;
+        left: 20%;
+        box-shadow: 5px 5px #888888;
+    }
+
+    .pokemon-image img {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: -10%;
+    }
+
+    .pokemon-number, .pokemon-name, .pokemon-type {
+        position: relative;
+        left: 20%;
+    }
+}
+
+// POKEMON TYPES
+.grass-type {
+    background-color: #9bcc50;
+    border-radius: 5px;
+}
+
+.fire-type {
+    background-color: red;
+    border-radius: 5px;
+    color:white;
+}
+
+.water-type {
+    background-color: blue;
+    border-radius: 5px;
+    color:white;
+}
+
+.bug-type {
+    background-color: #729f3f;
+    border-radius: 5px;
+    color:white; 
+}
+
+.flying-type {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+    border-radius: 5px;
+}
+
+.poison-type {
+    background-color: purple;
+    border-radius: 5px;
+    color:white; 
+}
+
+.normal-type {
+    background-color: #a4acaf;
+    border-radius: 5px;
+}
+
+.fighting-type {
+    background-color:#d56723;
+    color:white; 
+    border-radius: 5px;
+}
+
+.electric-type {
+    background-color:#eed535;
+    border-radius: 5px;
+}
+
+.rock-type {
+    background-color:#a38c21;
+    color:white; 
+    border-radius: 5px;
+}
+
+.ground-type {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+    border-radius: 5px;
+}
+
+.psychic-type {
+    background-color:#f366b9;
+    color:white;
+    border-radius: 5px;
+}
+
+.ice-type {
+    background-color:#51c4e7;
+    border-radius: 5px;
+}
+
+.dragon-type {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.ghost-type {
+    background-color:#7b62a3;
+    color: white;
+    border-radius: 5px;
+}
+
+.dark-type {
+    background-color:#707070;
+    color: white;
+    border-radius: 5px;
+}
+
+.iron-type {
+    background-color:#9eb7b8;
+    border-radius: 5px;
+}
+
+.fairy-type {
+    background-color:#fdb9e9;
+    border-radius: 5px;
+}
+
+// efeito pulsação
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+       -webkit-transform: scale(0.9);
+       transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+       transform: scale(1);
+    }
+}

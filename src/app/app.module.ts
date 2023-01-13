@@ -22,6 +22,8 @@ import { ToDoListModule } from './projects/to-do-list/to-do-list.module';
 import { ChatInboxModule } from './projects/chat-inbox/chat-inbox.module';
 import { MarvelAppModule } from './projects/marvel-app/marvel-app.module';
 import { ReceitasMeyryModule } from './projects/receitas-meyry/receitas-meyry.module';
+import { SuperTrunfoModule } from './projects/super-trunfo/super-trunfo.module';
+import { PokedexModule } from './projects/pokedex/pokedex.module';
 
 @NgModule({
   declarations: [
@@ -42,10 +44,13 @@ import { ReceitasMeyryModule } from './projects/receitas-meyry/receitas-meyry.mo
     RevelationTeaModule,
     AdminModule,    
     MainPageModule,
+    //projects
     ToDoListModule,
     ChatInboxModule,
     MarvelAppModule,
     ReceitasMeyryModule,
+    SuperTrunfoModule,
+    PokedexModule,
     //shared components
     SimpleTableModule,
     SimpleAddFormModule

@@ -19,6 +19,13 @@
         <p>{{ item.tecnologias }}</p>
     </div>
 
+    <h4>Status</h4>
+    <div class="app-percentage-container">       
+        <div class="percentage-bar" [style.width.%]="item.status">            
+        </div>
+        <span class="percentage-text">{{ item.status }}%</span>
+    </div>
+
     <div class="app-actions">
         <i class="bi bi-eye-fill" (click)="navigateToApp(item.rota)">&nbsp;Acessar "{{ item.nome }}"</i>                
     </div>

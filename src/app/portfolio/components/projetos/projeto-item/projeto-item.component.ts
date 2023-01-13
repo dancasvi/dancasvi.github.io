@@ -10,6 +10,7 @@ import { ProjetoItem } from '../projetos.model';
 export class ProjetoItemComponent implements OnInit {
 
     @Input() item;
+    // status = 20;
 
     constructor(private router: Router){}
 
@@ -17,6 +18,6 @@ export class ProjetoItemComponent implements OnInit {
     }
 
     public navigateToApp(appRoute) {
-        this.router.navigate([appRoute]);
+        this.router.navigate([`projects/${appRoute}`]);
     }
 }

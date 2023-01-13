@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,12 @@ import { Component, Inject, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'portfolio-definitivo';  
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document,
+  private titleService: Title) {}
 
   ngOnInit(): void {
-    this.navegar('inicio');
+    this.titleService.setTitle('Daniel Castagna - Desenvolvedor Front End');
+    this.navegar('inicio');    
   }
 
   navegar(menuClicado: string) {

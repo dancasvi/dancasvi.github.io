@@ -1,0 +1,92 @@
+.shuffle-container img {
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background-color:#eceaea;    
+    background-size: 50px;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:10000000;
+    opacity: 0.9;
+    filter: alpha(opacity=40);
+}
+
+.new-game-table {
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background-color: green;
+}
+
+.logo img {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 25%;
+    left: 30%;
+    opacity: 0.3;
+}
+
+.player-1-container {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 65%;
+    left: 30%;
+
+    // background-color: red;
+}
+
+.player-2-container {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 1%;
+    left: 30%;
+
+    // background-color: yellow;
+}
+
+.player-3-container {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 35%;
+    left: 0%;
+    
+    // background-color: pink;
+}
+
+.player-4-container {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 35%;
+    left: 60%;
+    
+    // background-color: rgb(132, 132, 219);
+}
+
+.first-card {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 10%;
+    left: 30%;
+    background-color: white;
+    perspective: 1000px;
+
+}
+
+.first-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.first-card img:hover {
+    cursor: pointer;
+}

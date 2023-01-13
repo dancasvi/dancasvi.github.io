@@ -3,12 +3,18 @@
         <app-menu (eventoNavegar)="navegar($event)"></app-menu>
     </div>
     
-    <div id="inicio" class="img-flutuando">
+    <!-- <div id="inicio" class="img-flutuando">
         <div id="titulo">
             <h2>Daniel Castagna Vieira</h2>
             <p>
                 Desenvolvedor WEB
             </p>
+        </div>
+    </div> -->
+
+    <div id="inicio">
+        <div id="who-am-i">
+            <app-sobre></app-sobre>
         </div>
     </div>
     
@@ -25,20 +31,14 @@
     </div>
     
     <hr/>
-    
+
     <div id="contato">
         <app-contato></app-contato>
-    </div>
-    
+    </div>    
+
     <div class="btn-top">
         <img (click)="navegar('inicio')" src="./../assets/shared/icon-up-2.png"/>
     </div>
 
-    <!-- <app-card-maker></app-card-maker> -->
-
-    <!-- <div>  
-        <app-chat-inbox></app-chat-inbox> 
-     </div> -->
-
-     <!-- <button (click)="goToPage()">Marvel Everything</button> -->
+     <button (click)="goToPage()">Super Trunfo</button>
 </div>

@@ -9,7 +9,7 @@ export class Recipe {
     steps: Step[];
     nutritionfacts: NutritionFact[];
     categories: Category[];
-    images: RecipeImages[];
+    recipeImage: string;
 }
 
 export class Ingredient {
@@ -37,4 +37,10 @@ export class Category {
 
 export class RecipeImages {
     url: string;
+}
+
+export class ReceitasWrapper<T> {
+    status:number;
+    msg:string;
+    data: T[]
 }

@@ -1,0 +1,33 @@
+<div class="pokedex-loading" *ngIf="isLoading">
+    <img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif"/>
+</div>
+
+<div class="pokedex-container">
+    <div class="pokedex-header">
+        <div class="header-elements">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Pok%C3%A9_Ball.svg">
+            <h4>POKEDEX</h4>
+        </div>        
+    </div>
+
+    <div>
+        filters
+    </div>
+
+    <div *ngIf="pokemonList">
+        <div  class="row">
+            <div *ngFor="let poke of pokemonList" class="col-lg-3 col-md-3 col-sm-4 col-6">
+                <div>
+                    <app-pokemon-card [pokemonName]="poke.name"></app-pokemon-card>
+                </div>                
+            </div>  
+    </div>
+
+    <div class="loadMore-button-container">
+        <button (click)="loadMore()">Load more...</button>
+    </div>
+    <br><br><br>
+    <div class="pokedex-footer">
+        <footer>Developed by DanCasVi. Data provided by <a href="https://pokeapi.co/about" target="_blank">PokeAPI</a></footer>
+    </div>
+</div>

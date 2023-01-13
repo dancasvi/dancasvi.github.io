@@ -1,0 +1,50 @@
+<div class="app-container">
+    <h4>Cadastrar Receita</h4>
+
+    <div class="form-container">
+        <form [formGroup]="form" enctype="multipart/form-data" method="post">
+            <div class="row">
+                <div class="col-12">
+                    <label>Nome</label><br>
+                    <input type="text" formControlName="name"/>
+                </div>
+
+                <div class="col-12">
+                    <label>Descrição</label><br>                    
+                    <textarea formControlName="description">
+                    </textarea>
+                </div>
+
+                <div class="col-12">
+                    <label>Tempo de Preparo</label><br>
+                    <input type="text" formControlName="prepTime"/>
+                </div>
+
+                <div class="col-12">
+                    <label>Serve Qts Porções</label><br>
+                    <input type="text" formControlName="serving"/>
+                </div>
+
+                <div class="col-12">
+                    <label>Foto</label>
+                    <input type="file" formControlName="image" accept="image/*"
+                    id="arquivo" name="arquivo" (change)="selectFile($event)"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button (click)="salvar()">Salvar</button>
+
+                    <button (click)="getRecipe()">BUSCAR</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <img [src]="myUrl">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

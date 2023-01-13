@@ -25,24 +25,63 @@
         </form>
     </div>
 <hr>
-    <div class="content-container">        
-        <div class="second-model">
-            <h4>Veja essas receitas de dar água na boca!</h4>
-            <div class="recipe-image-container">
-                <img src="https://www.simplyrecipes.com/thmb/9LF17Tb7n--s7YnSvKMw59Sfc1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Curtido-LEAD-4-b8886e74b39d4ba9aeb7a071d130a614.jpg"/>
-            </div>           
-
-            <div class="recipe-text-container">
-                <div *ngFor="let recipe of recipes">
-                    <div class="recipe-name-container">
-                        {{recipe.name}}
-                    </div>
-        
-                    <div class="recipe-prepTime-container">
-                        <i class="bi bi-stopwatch">{{recipe.prepTime}}</i>
-                    </div>
+    <div class="content-container">
+        <h4>Veja essas receitas de dar água na boca!</h4>        
+ 
+        <!-- <div *ngFor="let recipe of recipes" class="recipe-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-3 col-sm-3 col-6">
+                    <div class="imagem">
+                        <img src="{{recipe.recipeImage}}"/>
+                    </div>  
                 </div>
-            </div>
+
+                <div class="col-lg-6 col-md-3 col-sm-3 col-6">                    
+                    <div class="recipe-text-container">
+                        <div class="recipe-name-container">
+                            {{recipe.name}}
+                        </div>
+            
+                        <div class="recipe-prepTime-container">
+                            <i class="bi bi-stopwatch">{{recipe.prepTime}}</i>
+                        </div>
+                    </div> 
+                </div>                
+            </div>    
+            <hr>       
+        </div> -->
+
+        <div class="recipe-container">
+            <div class="row">
+                <div *ngFor="let recipe of recipes" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <div class="img-container">
+                        <div class="imagem">
+                            <img src="{{recipe.recipeImage}}"/>
+                        </div>  
+                    </div>
+    
+                    <div class="text-container">                    
+                        <div class="recipe-text-container">
+                            <div class="recipe-name-container">
+                                {{recipe.name}}
+                            </div>
+                
+                            <div class="recipe-prepTime-container">
+                                <i class="bi bi-stopwatch">{{recipe.prepTime}}</i>
+                            </div>
+                        </div> 
+                    </div> 
+                    <hr>
+                </div>                
+            </div>            
         </div>
+    </div>
+
+    <div class="admin-container">
+        <h5>Área do Admin</h5>
+    
+        <button (click)="cadastrarReceita()">Cadastrar receita</button>
+    
+        <router-outlet></router-outlet>
     </div>
 </div>

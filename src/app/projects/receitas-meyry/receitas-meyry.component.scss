@@ -12,8 +12,6 @@ input, select {
     width: 100%;
 }
 
-
-
 .filters-container {
     border: 1px solid gray;
     border-radius: 8px;
@@ -22,8 +20,8 @@ input, select {
 }
 
 //second model
-.recipe-image-container {
-    max-height: 150px;
+.recipe-container {
+    // max-height: 150px;    
 }
 
 .recipe-image-container img {   
@@ -31,20 +29,41 @@ input, select {
     height: 100px;
 }
 
-.second-model, .recipe-image-container, .recipe-text-container {
+.recipe-image-container, .recipe-text-container {
     display: inline-block;
 }
 
 .recipe-name-container {
     position: relative;
-    top: -10px;
-    left: 15%;
-    font-size: 16px;
+    top: 10px;
+    left: 2%;
+    font-size: 12px;    
 }
 
 .recipe-prepTime-container {
     position: relative;
     top: 15px;
     left: 15%;
-    font-size: 16px;
+    font-size: 12px;    
+}
+
+.admin-container {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    min-height: 100%;
+}
+
+.imagem img {
+    width: 100px;
+    height: 100px;
+}
+
+.recipe-text-container {
+    // position: relative;
+    // left: -15px;
+}
+
+.img-container, .text-container {
+    display: inline-block;
 }

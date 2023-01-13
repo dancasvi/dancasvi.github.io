@@ -1,0 +1,67 @@
+<div class="card-container">
+    <div class="pokemon-image" *ngIf="currentPokemon">
+        <img src={{currentPokemon.sprites.front_default}}>
+    </div>
+
+    <div class="pokemon-number" *ngIf="currentPokemon">
+        <span>Nº {{ currentPokemon.id }}</span>
+    </div>
+
+    <div class="pokemon-name" *ngIf="currentPokemon">
+        <span>{{ currentPokemon.name | titlecase }}</span>
+    </div>
+
+    <div class="pokemon-type" *ngIf="currentPokemon">
+        <div>            
+            <span 
+            [ngClass]="{
+                'grass-type':currentPokemon.types[0].type.name == 'grass', 
+                'fire-type':currentPokemon.types[0].type.name == 'fire',
+                'water-type':currentPokemon.types[0].type.name == 'water',
+                'bug-type':currentPokemon.types[0].type.name == 'bug',
+                'flying-type':currentPokemon.types[0].type.name == 'flying',
+                'poison-type':currentPokemon.types[0].type.name == 'poison',
+                'normal-type': currentPokemon.types[0].type.name == 'normal',
+                'fighting-type': currentPokemon.types[0].type.name == 'fighting',
+                'electric-type': currentPokemon.types[0].type.name == 'electric',
+                'rock-type': currentPokemon.types[0].type.name == 'rock',
+                'ground-type': currentPokemon.types[0].type.name == 'ground',
+                'psychic-type': currentPokemon.types[0].type.name == 'psychic',
+                'ice-type': currentPokemon.types[0].type.name == 'ice',
+                'dragon-type': currentPokemon.types[0].type.name == 'dragon',
+                'ghost-type': currentPokemon.types[0].type.name == 'ghost',
+                'dark-type': currentPokemon.types[0].type.name == 'dark',
+                'iron-type': currentPokemon.types[0].type.name == 'iron',
+                'fairy-type': currentPokemon.types[0].type.name == 'fairy'
+                }">
+                &nbsp;&nbsp;{{ currentPokemon.types[0].type.name | titlecase }}&nbsp;&nbsp;
+            </span>
+            &nbsp;
+            <span 
+            [ngClass]="{
+                'grass-type':currentPokemon.types[1].type.name == 'grass', 
+                'fire-type':currentPokemon.types[1].type.name == 'fire',
+                'water-type':currentPokemon.types[1].type.name == 'water',
+                'bug-type':currentPokemon.types[1].type.name == 'bug',
+                'flying-type':currentPokemon.types[1].type.name == 'flying',
+                'poison-type':currentPokemon.types[1].type.name == 'poison',
+                'normal-type': currentPokemon.types[1].type.name == 'normal',
+                'fighting-type': currentPokemon.types[1].type.name == 'fighting',
+                'electric-type': currentPokemon.types[1].type.name == 'electric',
+                'rock-type': currentPokemon.types[1].type.name == 'rock',
+                'ground-type': currentPokemon.types[1].type.name == 'ground',
+                'psychic-type': currentPokemon.types[1].type.name == 'psychic',
+                'ice-type': currentPokemon.types[1].type.name == 'ice',
+                'dragon-type': currentPokemon.types[1].type.name == 'dragon',
+                'ghost-type': currentPokemon.types[1].type.name == 'ghost',
+                'dark-type': currentPokemon.types[1].type.name == 'dark',
+                'iron-type': currentPokemon.types[1].type.name == 'iron',
+                'fairy-type': currentPokemon.types[1].type.name == 'fairy'
+                }"
+            *ngIf="currentPokemon.types[1]">
+                &nbsp;&nbsp;{{ currentPokemon.types[1].type.name | titlecase }}&nbsp;&nbsp;
+            </span>
+        </div>
+    </div>
+</div>
+<br>

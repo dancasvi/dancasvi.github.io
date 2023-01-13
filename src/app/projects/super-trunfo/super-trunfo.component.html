@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="loading" *ngIf="isLoading">
+        <img src="https://c.tenor.com/1cOzvbuPE3AAAAAC/gtg-omw.gif"/>
+    </div>
+    
+    <div>
+        <app-super-trunfo-menu (selectItemEvent)="navigateTo($event)"></app-super-trunfo-menu>
+    </div>
+</div>
+
+<div class="close-modal-button" *ngIf="showingRules" (click)="closeRules()">
+    &nbsp;Fechar&nbsp;    
+</div>
+
+<div class="modal-rules" *ngIf="showingRules">
+<hr>
+    <div>
+        <h4>Modo de Jogar</h4>
+        <p>As cartas são embaralhadas e divididas em montes iguais entre os jogadores.</p>
+        <p>Cada jogador só pode ver a carta de cima do seu monte.</p>
+        <p>Um dado é jogado para ver quem inicia.</p>
+        <p>O jogador escolhe um atributo da sua carta e informa seu valor.</p>
+        <p>Os demais jogadores, na ordem, informam essa mesma característica de sua carta.</p>
+        <p>O jogador com o maior atributo recebe as cartas dos outros jogadores e põe ao fim do seu monte e agora ele escolhe um atributo na próxima carta.</p>
+    </div>
+
+    <div>
+        <h4>Empate</h4>
+        <p>
+            Na rodada, se houver empate entre dois ou mais jogadores, as cartas são adicionadas à mesa e os jogadores empatados fazem uma nova rodada. O jogador que escolheu o atributo, tem direito de escolher outro atributo. Quem vencer a rodada, leva todas as cartas da mesa.
+        </p>
+    </div>
+
+    <div>
+        <h4>Carta Super Trunfo</h4>
+        <p>
+            A carta super trunfo é embaralhada normalmente com as outras. Ela vence automaticamente qualquer carta com código B, C ou D, só perdendo se for uma carta com código A.
+        </p>
+    </div>
+</div>
+
+
+<div class="modal-definitions" *ngIf="showingStartGameModal">
+    <h5>Quantas pessoas vão jogar Super Trunfo Naruto?</h5>
+    <br>
+    <div class="number-of-players-container">
+        <select id="numberOfPlayers">
+            <option>-</option>
+            <option>2</option>
+            <option>4</option>
+        </select>
+
+        <button (click)="startGame()">Começar!</button>
+        <button (click)="closeStartGameModal()">Cancelar</button>
+    </div>
+</div>
