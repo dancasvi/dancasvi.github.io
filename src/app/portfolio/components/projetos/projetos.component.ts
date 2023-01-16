@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { STProjectsDTO } from "../../seatable-database/models/seatable-models";
+import { SeaTableDBService } from "../../seatable-database/services/seatable-db.service";
 // import { ProjetoItem } from "../../models/projetos.model";
 import { ProjetoItem } from "./projetos.model";
 import { ProjetosService } from "./projetos.service";
@@ -13,8 +15,11 @@ export class ProjetosComponent implements OnInit {
 
     listaProj: ProjetoItem[] = []
 
+    stListaProj: STProjectsDTO[] = [];
+
     constructor(
-        private service: ProjetosService
+        private service: ProjetosService,
+        private seaTableDBService: SeaTableDBService
     ) {}
 
     ngOnInit(): void {
@@ -27,8 +32,23 @@ export class ProjetosComponent implements OnInit {
                 });
             },
             (e) => {
-                console.log(e);
+                // console.log(e);
+                console.log("Falha ao buscar pela API padrão, acessando SeaTable");
+                this.buscarProjetosViaSeaTable();
             }
         );
+    }
+
+    private buscarProjetosViaSeaTable() {
+        this.seaTableDBService.buscarProjetos().subscribe(
+            (dados) => {
+                dados.rows.forEach(element => {
+                    this.stListaProj.push(element);
+                });
+            },
+            (e) => {
+                console.log(e);
+            }
+        )
     }
 }

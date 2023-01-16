@@ -1,4 +1,4 @@
-<div class="card-proj">    
+<div class="card-proj" *ngIf="item.nome">    
     <div class="app-name-container">
         <h3>{{ item.nome }}</h3>
     </div>
@@ -28,5 +28,40 @@
 
     <div class="app-actions">
         <i class="bi bi-eye-fill" (click)="navigateToApp(item.rota)">&nbsp;Acessar "{{ item.nome }}"</i>                
+    </div>
+</div>
+
+<div class="card-proj" *ngIf="item.ProjectName"> 
+    ST
+    <div class="app-name-container">
+        <h3>{{ item.ProjectName }}</h3>
+    </div>
+
+    <div class="app-image-container">
+        <div class="app-image">
+            <img src={{item.Icon}}/>
+            <!-- <img src="../../../../../assets/portfolio/project-icons/pokedex.jpg"/> -->
+        </div>        
+    </div>
+
+    <div class="app-description-container">
+        <h4>Descrição</h4>
+        <p>{{ item.Description }}</p>
+    </div>
+
+    <div class="app-technologies-container">
+        <h4>Tecnologias</h4>
+        <p>{{ item.Technologies }}</p>
+    </div>
+
+    <h4>Status</h4>
+    <div class="app-percentage-container">       
+        <div class="percentage-bar" [style.width.%]="item.Status">            
+        </div>
+        <span class="percentage-text">{{ item.Status }}%</span>
+    </div>
+
+    <div class="app-actions">
+        <i class="bi bi-eye-fill" (click)="navigateToApp(item.Route)">&nbsp;Acessar "{{ item.ProjectName }}"</i>                
     </div>
 </div>

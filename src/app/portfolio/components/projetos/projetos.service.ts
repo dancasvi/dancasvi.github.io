@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { ProjetoItem, ProjetoWrapperDTO } from "./projetos.model";
 
-const URL = 'http://dancasvi.com.br:21012';
+// const URL = 'http://dancasvi.com.br:21012';
+const URL = 'localhost:8080';
 
 @Injectable({ providedIn: 'root' })
 export class ProjetosService {

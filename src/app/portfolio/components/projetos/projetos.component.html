@@ -7,12 +7,24 @@
     </div>
 </div> -->
 
-<div class="proj-container">
+<div class="proj-container" *ngIf="listaProj.length > 0">
     <div id="items-wrapper">
         <h2>Projetos</h2>
         <hr>
         <div #items id="items">
             <div *ngFor="let proj of listaProj" class="item">
+                <app-projeto-item [item]="proj"></app-projeto-item>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="proj-container" *ngIf="stListaProj.length > 0">
+    <div id="items-wrapper">
+        <h2>Projetos ST</h2>
+        <hr>
+        <div #items id="items">
+            <div *ngFor="let proj of stListaProj" class="item">
                 <app-projeto-item [item]="proj"></app-projeto-item>
             </div>
         </div>

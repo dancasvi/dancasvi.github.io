@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SeaTableDBService } from '../../seatable-database/services/seatable-db.service';
 
 @Component({
     selector: 'app-main-page',
