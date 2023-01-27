@@ -6,7 +6,7 @@ import { STProjectsDTO, STProjectsWrapper } from "../models/seatable-models";
 // const URL = 'http://dancasvi.com.br:21012';
 // const URL = 'localhost:8080';
 const URL = 'https://cloud.seatable.io/dtable-server/api/v1/dtables/';
-const BASETOKEN = 'token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM5MDM5MTMsImR0YWJsZV91dWlkIjoiYzE2OWY5ODEtN2U4NS00MDc2LWJhYmQtMTVkNzcyZTRmNTFhIiwidXNlcm5hbWUiOiIiLCJwZXJtaXNzaW9uIjoicnciLCJhcHBfbmFtZSI6ImRhbmNhc3ZpIn0.r9E9NmHruxh6vq1gW7aoRJswaOBDEc1JdSTpCVURqAs';
+const BASETOKEN = 'token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzUxMTAwMDYsImR0YWJsZV91dWlkIjoiYzE2OWY5ODEtN2U4NS00MDc2LWJhYmQtMTVkNzcyZTRmNTFhIiwidXNlcm5hbWUiOiIiLCJwZXJtaXNzaW9uIjoicnciLCJhcHBfbmFtZSI6ImRhbmNhc3ZpIn0.pkGrTnq_DtuCJetL8ZTIYGw0suhBSlPKlkJ3yrcDyNQ'
 
 @Injectable({ providedIn: 'root' })
 export class SeaTableDBService {
@@ -26,7 +26,11 @@ export class SeaTableDBService {
     
     private setHeaders() {
         const httpOptions = {
-            headers: new HttpHeaders({'Authorization': BASETOKEN})
+            headers: new HttpHeaders(
+                {
+                    'Authorization': BASETOKEN
+                }
+            )
         };
 
         return httpOptions;
