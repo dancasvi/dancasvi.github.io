@@ -6,7 +6,8 @@ import { STProjectsDTO, STProjectsWrapper } from "../models/seatable-models";
 // const URL = 'http://dancasvi.com.br:21012';
 // const URL = 'localhost:8080';
 const URL = 'https://cloud.seatable.io/dtable-server/api/v1/dtables/';
-const BASETOKEN = 'token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzUxMTAwMDYsImR0YWJsZV91dWlkIjoiYzE2OWY5ODEtN2U4NS00MDc2LWJhYmQtMTVkNzcyZTRmNTFhIiwidXNlcm5hbWUiOiIiLCJwZXJtaXNzaW9uIjoicnciLCJhcHBfbmFtZSI6ImRhbmNhc3ZpIn0.pkGrTnq_DtuCJetL8ZTIYGw0suhBSlPKlkJ3yrcDyNQ'
+const BASETOKEN = 'token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzU0MzMzNTQsImR0YWJsZV91dWlkIjoiYzE2OWY5ODEtN2U4NS00MDc2LWJhYmQtMTVkNzcyZTRmNTFhIiwidXNlcm5hbWUiOiIiLCJwZXJtaXNzaW9uIjoicnciLCJhcHBfbmFtZSI6ImRhbmNhc3ZpIn0.tRzvYrltqIH9ZTbL4VSm-XvRANxXkJqa5IKdY6lJSdM'
+const APITOKEN = 'Token 4dd4144783a2c97ba8008224285f64e27ddb82fd';
 
 @Injectable({ providedIn: 'root' })
 export class SeaTableDBService {
@@ -34,5 +35,19 @@ export class SeaTableDBService {
         };
 
         return httpOptions;
+    }
+
+    buscarNovoBaseToken() {
+        const httpOptions = {
+            headers: new HttpHeaders(
+                {
+                    'Accept': 'application/json; charset=utf-8; indent=4',
+                    'Authorization': APITOKEN
+                }
+            )
+        };
+
+        return this.http.get(`https://cloud.seatable.io/api/v2.1/dtable/app-access-token/`, httpOptions)
+        .pipe(map((dados) => dados));
     }
 }

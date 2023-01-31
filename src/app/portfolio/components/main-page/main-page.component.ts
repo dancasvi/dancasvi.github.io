@@ -25,6 +25,6 @@ export class MainPageComponent implements OnInit {
   }
 
   goToPage() {
-    this.router.navigate(['champion-select']);
+    this.router.navigate(['projects/responsivity-app']);
   }
 }

@@ -50,5 +50,14 @@ export class ProjetosComponent implements OnInit {
                 console.log(e);
             }
         )
+
+        // this.seaTableDBService.buscarNovoBaseToken().subscribe(
+        //     (dados) => {                
+        //         console.log(dados);
+        //     },
+        //     (e) => {
+        //         console.log(e);
+        //     }
+        // )
     }
 }
