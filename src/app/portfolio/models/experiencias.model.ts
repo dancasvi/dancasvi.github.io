@@ -8,6 +8,14 @@ export class ExperienciaItem {
     exibir: boolean;
 }
 
+export class ExperienciaItemMock {
+    id: number;
+    company: string;
+    startDate: Date;
+    endDate: Date;
+    description: string;
+    occupation: string;
+}
 
 export class ExperienciaWrapperDTO<T> {
     msg: string;

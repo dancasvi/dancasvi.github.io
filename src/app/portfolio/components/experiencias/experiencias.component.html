@@ -1,8 +1,18 @@
-<div id="items-wrapper">
+<div id="items-wrapper" *ngIf="listaExp.length > 0">
     <h2>Experiências</h2>
     <hr>
     <div #items id="items">
         <div *ngFor="let exp of listaExp" class="item">
+            <app-experiencia-item [item]="exp"></app-experiencia-item>
+        </div>
+    </div>
+</div>
+
+<div id="items-wrapper" *ngIf="mockListaExp.length > 0">
+    <h2>Experiências Mock</h2>
+    <hr>
+    <div #items id="items">
+        <div *ngFor="let exp of mockListaExp" class="item">
             <app-experiencia-item [item]="exp"></app-experiencia-item>
         </div>
     </div>

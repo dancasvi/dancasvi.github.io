@@ -30,3 +30,15 @@
         </div>
     </div>
 </div>
+
+<div class="proj-container" *ngIf="mockListaProj.length > 0">
+    <div id="items-wrapper">
+        <h2>Projetos</h2>
+        <hr>
+        <div #items id="items">
+            <div *ngFor="let proj of mockListaProj" class="item">
+                <app-projeto-item [item]="proj"></app-projeto-item>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-<div class="card-exp">
+<div class="card-exp" *ngIf="item.nomeEmpresa">
     <h3>{{ item.cargo }}</h3>
 
     <h6>{{ item.nomeEmpresa }}</h6>
@@ -9,4 +9,17 @@
     </p>
 
     <p>{{ item.descricao }}</p>
+</div>
+
+<div class="card-exp" *ngIf="item.company">
+    <h4>{{ item.occupation }}</h4>
+
+    <h4>{{ item.company }}</h4>
+
+    <p>
+        {{ item.startDate }} à
+        {{ item.endDate }}
+    </p>
+
+    <p>{{ item.description }}</p>
 </div>

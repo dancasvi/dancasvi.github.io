@@ -20,8 +20,13 @@ export class ProjetoItemComponent implements OnInit {
 
     ngOnInit(): void {
         if(this.item.Icon) {
-            this.item.Icon = this.item.Icon.toString().trim();
-            this.item.Icon = "../../../../../assets/portfolio/project-icons/"+this.item.Icon+'.jpg';            
+            this.item.Icon = this.item.icon.toString().trim();
+            this.item.Icon = "../../../../../assets/portfolio/project-icons/"+this.item.Icon+'.jpg';
+        }
+
+        if(this.item.icon) {
+            this.item.icon = this.item.icon.toString().trim();
+            this.item.icon = "../../../../../assets/portfolio/project-icons/"+this.item.icon+'.jpg';
         }
     }
 

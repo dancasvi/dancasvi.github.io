@@ -9,6 +9,16 @@ export class ProjetoItem {
     tecnologias:string;
 }
 
+export class ProjetoItemMock {
+    id: number;
+    projectName: string;
+    active: boolean;
+    icon: string;
+    description: string;
+    status: number;
+    route: string;
+    technologies: string;
+}
 
 export class ProjetoWrapperDTO<T> {
     msg: string;

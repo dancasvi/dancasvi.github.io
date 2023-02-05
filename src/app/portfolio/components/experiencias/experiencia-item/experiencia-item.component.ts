@@ -8,7 +8,7 @@ import { ExperienciaItem } from "src/app/portfolio/models/experiencias.model";
 })
 export class ExperienciaItemComponent implements OnInit {
 
-    @Input() item = new ExperienciaItem();
+    @Input() item// = new ExperienciaItem();
 
     ngOnInit(): void {
     }

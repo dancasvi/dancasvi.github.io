@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "projectName": "Pokedex",
+        "active": true,
+        "icon": "pokedex",
+        "description": "All info you need about your favorite Pokemon!",
+        "status": 40,
+        "route": "pokedex",
+        "technologies": "Angular 2+, Javascript, HTML, CSS" 
+    },
+    {
+        "id": 2,
+        "projectName": "Marvel App",
+        "active": true,
+        "icon": "marvel-app",
+        "description": "All info you need about your favorite Marvel characters!",
+        "status": 70,
+        "route": "marvel-app",
+        "technologies": "Angular 2+, Javascript, HTML, CSS" 
+    }
+]
