@@ -12,6 +12,7 @@ import { MarvelAppComponent } from './projects/marvel-app/marvel-app.component';
 import { PokedexComponent } from './projects/pokedex/pokedex.component';
 import { CadastroReceitaComponent } from './projects/receitas-meyry/cadastro-receita/cadastro-receita.component';
 import { ReceitasMeyryComponent } from './projects/receitas-meyry/receitas-meyry.component';
+import { ResponsivityAppComponent } from './projects/responsivity-app/responsivity-app.component';
 import { RevelationTeaComponent } from './projects/revelation-tea/revelation-tea.component';
 import { NewGameComponent } from './projects/super-trunfo/new-game/new-game.component';
 import { SuperTrunfoComponent } from './projects/super-trunfo/super-trunfo.component';
@@ -82,6 +83,10 @@ const routes: Routes = [
     path: 'projects/pokedex',
     component: PokedexComponent
   },
+  {
+    path: 'projects/responsivity-app',
+    component: ResponsivityAppComponent
+  }
 ];
 
 @NgModule({

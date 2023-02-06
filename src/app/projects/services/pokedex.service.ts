@@ -5,7 +5,7 @@ import { PokemonDTO, PokemonWrapperDTO } from "../models/pokedex.model";
 import { SuperTrunfoWrapper } from "../models/super-trunfo.model";
 
 const url = "https://pokeapi.co/api/v2/pokemon";
-
+const urlType = "https://pokeapi.co/api/v2/type";
 @Injectable({ providedIn: 'root' })
 export class PokedexService { 
     constructor(private http: HttpClient) {
@@ -22,6 +22,11 @@ export class PokedexService {
 
     getPokemonByName(name) {
         return this.http.get(`${url}/${name}`)
+        .pipe(map((dados) => dados));
+    }
+
+    getWeaknessesByTypeName(typeName) {
+        return this.http.get(`${urlType}/${typeName}`)
         .pipe(map((dados) => dados));
     }
 }

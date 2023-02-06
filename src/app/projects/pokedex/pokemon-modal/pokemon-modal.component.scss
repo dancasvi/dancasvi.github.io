@@ -1,0 +1,226 @@
+.pokemodal-container {
+    background-color: #efe8e8d6;
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 0 10px 10px 0;
+}
+
+.poke-images-container {
+    // background-color: gray;
+    width: 50%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.poke-images-container h5 {
+    margin-left: 10%;
+}
+
+.poke-images-container img:hover {
+    cursor: pointer;
+}
+
+.poke-info-container {
+    // background-color: rgb(193, 193, 245);
+    width: 50%;
+    height: 50%;
+    padding: 1% 0 0 0;
+}
+
+.poke-info-container p {
+    margin-left: 5%;
+}
+
+.poke-info-container h5 {
+    margin-left: 5%;
+}
+
+.poke-stats-container {
+    // background-color: rgb(119, 146, 146);
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 5%;
+}
+
+.poke-stats-container h4 {
+    margin-left: 5%;
+}
+
+.stat-percentage-container {
+    height: 12px;
+    position: relative;
+    left: 5%;
+    top: 15%;
+}
+
+.stat-bar {
+    background-color: #40c6ef;
+    height: 6px;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    left: 45px;
+    border-radius: 10px 0 0 10px;
+}
+
+.poke-typeinfo-container {
+    // background-color: yellow;
+}
+
+.poke-types-container {
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
+.types {
+    display: inline-block;
+}
+
+//Desktop
+@media screen and (min-width: 850px) {
+    
+}
+
+
+//Smartphone
+@media screen and (max-width: 350px) {
+    .pokemodal-container {
+        background-color: #efe8e8d6;
+        width: 80%;
+        height: 100%;
+    
+        border: 1px solid black;
+        border-radius: 0 10px 10px 0;
+    
+        margin-bottom: 80%;
+    }
+
+    .poke-info-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .poke-typeinfo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+// POKEMON TYPES
+.grass-type {
+    background-color: #9bcc50;
+    border-radius: 5px;
+}
+
+.fire-type {
+    background-color: red;
+    border-radius: 5px;
+    color:white;
+}
+
+.water-type {
+    background-color: blue;
+    border-radius: 5px;
+    color:white;
+}
+
+.bug-type {
+    background-color: #729f3f;
+    border-radius: 5px;
+    color:white; 
+}
+
+.flying-type {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+    border-radius: 5px;
+}
+
+.poison-type {
+    background-color: purple;
+    border-radius: 5px;
+    color:white; 
+}
+
+.normal-type {
+    background-color: #a4acaf;
+    border-radius: 5px;
+}
+
+.fighting-type {
+    background-color:#d56723;
+    color:white; 
+    border-radius: 5px;
+}
+
+.electric-type {
+    background-color:#eed535;
+    border-radius: 5px;
+}
+
+.rock-type {
+    background-color:#a38c21;
+    color:white; 
+    border-radius: 5px;
+}
+
+.ground-type {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+    border-radius: 5px;
+}
+
+.psychic-type {
+    background-color:#f366b9;
+    color:white;
+    border-radius: 5px;
+}
+
+.ice-type {
+    background-color:#51c4e7;
+    border-radius: 5px;
+}
+
+.dragon-type {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.ghost-type {
+    background-color:#7b62a3;
+    color: white;
+    border-radius: 5px;
+}
+
+.dark-type {
+    background-color:#707070;
+    color: white;
+    border-radius: 5px;
+}
+
+.iron-type {
+    background-color:#9eb7b8;
+    border-radius: 5px;
+}
+
+.fairy-type {
+    background-color:#fdb9e9;
+    border-radius: 5px;
+}
+

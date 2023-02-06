@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { PokedexService } from '../services/pokedex.service';
+import { PokemonModalComponent } from './pokemon-modal/pokemon-modal.component';
 
 @Component({
     selector: 'app-pokedex',
@@ -11,12 +13,29 @@ export class PokedexComponent implements OnInit {
     limit = 10;
     isLoading = false;
 
+    selectedPokemon = '';
+
+    form:FormGroup;   
+
+    @ViewChild(PokemonModalComponent) child:PokemonModalComponent;
+
     constructor(
-        private pokedexService: PokedexService
+        private pokedexService: PokedexService,
+        private formBuilder: FormBuilder
     ){}
 
     ngOnInit(): void {
         this.loadPokemon();
+
+        this.form = this.formBuilder.group({            
+            name: ['']
+        });
+    }
+
+    public selectPokemon(e) {
+        console.log(e);
+        this.selectedPokemon = e.name;
+        this.child.showModal(e.name);
     }
 
     public loadMore() {
@@ -25,6 +44,28 @@ export class PokedexComponent implements OnInit {
             this.limit += 10;
             this.loadPokemon();
         }, 2000);        
+    }
+
+    public findPokemonByName() {        
+        const pokeName = this.form.get('name').value;
+
+        if(pokeName) {
+            this.showLoading();
+            this.pokedexService.getPokemonByName(pokeName).subscribe(
+                (dados) => {
+                    this.pokemonList = [];
+                    this.pokemonList.push(dados);
+
+                    this.form.reset();
+                    this.hideLoading();
+                },
+                (e) => {
+                    console.log(e);
+                    this.pokemonList = [];
+                    this.hideLoading();
+                }
+            );
+        }
     }
 
     private loadPokemon() {

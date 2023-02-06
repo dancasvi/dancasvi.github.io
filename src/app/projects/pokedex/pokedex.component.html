@@ -10,14 +10,35 @@
         </div>        
     </div>
 
-    <div>
-        filters
+    <div class="poke-filters">
+        <div class="row">
+            <form [formGroup]="form">
+                <div class="col-12">
+                    <label>Find by Name:</label>
+                </div>
+    
+                <div class="col-12">
+                    <input type="text" formControlName="name"/>
+                    <button (click)="findPokemonByName()">Find</button>
+                </div>
+            </form>            
+        </div>
+
+        <div class="row" *ngIf="pokemonList.length == 0">
+            <p style="color: red">Can't find that Pokemon</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="selected-poke-modal">
+        <app-pokemon-modal [pokemonName]="selectedPokemon"></app-pokemon-modal>          
     </div>
 
     <div *ngIf="pokemonList">
         <div  class="row">
             <div *ngFor="let poke of pokemonList" class="col-lg-3 col-md-3 col-sm-4 col-6">
-                <div>
+                <div (click)="selectPokemon(poke)">
                     <app-pokemon-card [pokemonName]="poke.name"></app-pokemon-card>
                 </div>                
             </div>  

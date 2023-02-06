@@ -1,0 +1,95 @@
+<div class="pokemodal-container" *ngIf="isShowingModal" [@inOutAnimation]>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 poke-images-container" *ngIf="selectedPokemon" (click)="changeSprite()">            
+            <div>
+                <img *ngIf="currentSprite == 0" src={{selectedPokemon.sprites.front_default}}>
+
+                <img *ngIf="currentSprite == 1" src={{selectedPokemon.sprites.back_default}}>
+    
+                <img *ngIf="currentSprite == 2" src={{selectedPokemon.sprites.front_shiny}}>
+    
+                <img *ngIf="currentSprite == 3" src={{selectedPokemon.sprites.back_shiny}}>
+                <h5>{{ selectedPokemon.name | titlecase}} </h5>
+                <hr>
+            </div>            
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 poke-info-container" *ngIf="selectedPokemon">
+            <h4>Info</h4>
+            <p>Height: {{ selectedPokemon.height }}</p>
+            <p>Weight: {{ selectedPokemon.weight }}</p>
+            <h5>Abilities: </h5>
+            <div *ngFor="let ability of selectedPokemon.abilities">
+                <p>{{ ability.ability.name | titlecase}}</p>
+            </div>
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 poke-stats-container" *ngIf="selectedPokemon">
+            <h4>Stats</h4>
+            <div class="stat-percentage-container">
+                <p>HP: {{ selectedPokemon.stats[0].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[0].base_stat / 2"></div>            
+            </div>
+    
+            <div class="stat-percentage-container">
+                <p>Atk: {{ selectedPokemon.stats[1].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[1].base_stat / 2"></div>            
+            </div>
+    
+            <div class="stat-percentage-container">
+                <p>Def: {{ selectedPokemon.stats[2].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[2].base_stat / 2"></div>            
+            </div>
+    
+            <div class="stat-percentage-container">
+                <p>SpA: {{ selectedPokemon.stats[3].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[3].base_stat / 2"></div>            
+            </div>
+    
+            <div class="stat-percentage-container">
+                <p>SpD: {{ selectedPokemon.stats[4].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[4].base_stat / 2"></div>            
+            </div>
+    
+            <div class="stat-percentage-container">
+                <p>Spe: {{ selectedPokemon.stats[5].base_stat }}</p>
+                <div class="stat-bar" [style.width.%]="selectedPokemon.stats[5].base_stat / 2"></div>            
+            </div>
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 poke-typeinfo-container" *ngIf="selectedPokemon">
+            <h4>Type</h4>
+            <div *ngFor="let type of selectedPokemon.types" class="types">                
+                <span 
+                [ngClass]="{
+                    'grass-type':type.type.name == 'grass', 
+                    'fire-type':type.type.name == 'fire',
+                    'water-type':type.type.name == 'water',
+                    'bug-type':type.type.name == 'bug',
+                    'flying-type':type.type.name == 'flying',
+                    'poison-type':type.type.name == 'poison',
+                    'normal-type': type.type.name == 'normal',
+                    'fighting-type': type.type.name == 'fighting',
+                    'electric-type': type.type.name == 'electric',
+                    'rock-type': type.type.name == 'rock',
+                    'ground-type': type.type.name == 'ground',
+                    'psychic-type': type.type.name == 'psychic',
+                    'ice-type': type.type.name == 'ice',
+                    'dragon-type': type.type.name == 'dragon',
+                    'ghost-type': type.type.name == 'ghost',
+                    'dark-type': type.type.name == 'dark',
+                    'iron-type': type.type.name == 'iron',
+                    'fairy-type': type.type.name == 'fairy'
+                    }">
+                    &nbsp;&nbsp;{{ type.type.name | titlecase }}&nbsp;&nbsp;
+                </span>&nbsp;
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button (click)="closeModal()">Close</button>
+    </div>    
+</div>
+
+<hr>
