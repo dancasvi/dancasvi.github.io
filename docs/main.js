@@ -315,8 +315,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pokemon-modal/pokemon-modal.component */ "h0qC");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _services_pokedex_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/pokedex.service */ "tYiL");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pokemon-card/pokemon-card.component */ "QxeF");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pokemon-card/pokemon-card.component */ "QxeF");
+
 
 
 
@@ -324,55 +326,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function PokedexComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "img", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "img", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
-function PokedexComponent_div_11_div_2_Template(rf, ctx) { if (rf & 1) {
-    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokedexComponent_div_11_div_2_Template_div_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r5); const poke_r3 = ctx.$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r4.selectPokemon(poke_r3); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "app-pokemon-card", 5);
+function PokedexComponent_div_17_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "p", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Can't find that Pokemon");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} }
+function PokedexComponent_div_21_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokedexComponent_div_21_div_2_Template_div_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const poke_r4 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r5.selectPokemon(poke_r4); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "app-pokemon-card", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const poke_r3 = ctx.$implicit;
+    const poke_r4 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("pokemonName", poke_r3.name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("pokemonName", poke_r4.name);
 } }
-function PokedexComponent_div_11_Template(rf, ctx) { if (rf & 1) {
-    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+function PokedexComponent_div_21_Template(rf, ctx) { if (rf & 1) {
+    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, PokedexComponent_div_11_div_2_Template, 3, 1, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, PokedexComponent_div_21_div_2_Template, 3, 1, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "button", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokedexComponent_div_11_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r7); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r6.loadMore(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokedexComponent_div_21_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r8); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r7.loadMore(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, "Load more...");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "br");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "footer");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "Developed by DanCasVi. Data provided by ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "a", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "a", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, "PokeAPI");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r1.pokemonList);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.pokemonList);
 } }
 class PokedexComponent {
-    constructor(pokedexService) {
+    constructor(pokedexService, formBuilder) {
         this.pokedexService = pokedexService;
+        this.formBuilder = formBuilder;
         this.pokemonList = [];
         this.limit = 10;
         this.isLoading = false;
@@ -380,6 +390,9 @@ class PokedexComponent {
     }
     ngOnInit() {
         this.loadPokemon();
+        this.form = this.formBuilder.group({
+            name: ['']
+        });
     }
     selectPokemon(e) {
         console.log(e);
@@ -392,6 +405,22 @@ class PokedexComponent {
             this.limit += 10;
             this.loadPokemon();
         }, 2000);
+    }
+    findPokemonByName() {
+        const pokeName = this.form.get('name').value;
+        if (pokeName) {
+            this.showLoading();
+            this.pokedexService.getPokemonByName(pokeName).subscribe((dados) => {
+                this.pokemonList = [];
+                this.pokemonList.push(dados);
+                this.form.reset();
+                this.hideLoading();
+            }, (e) => {
+                console.log(e);
+                this.pokemonList = [];
+                this.hideLoading();
+            });
+        }
     }
     loadPokemon() {
         this.showLoading();
@@ -410,13 +439,13 @@ class PokedexComponent {
         this.isLoading = false;
     }
 }
-PokedexComponent.ɵfac = function PokedexComponent_Factory(t) { return new (t || PokedexComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_pokedex_service__WEBPACK_IMPORTED_MODULE_2__["PokedexService"])); };
+PokedexComponent.ɵfac = function PokedexComponent_Factory(t) { return new (t || PokedexComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_pokedex_service__WEBPACK_IMPORTED_MODULE_2__["PokedexService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"])); };
 PokedexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: PokedexComponent, selectors: [["app-pokedex"]], viewQuery: function PokedexComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵviewQuery"](_pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_0__["PokemonModalComponent"], 1);
     } if (rf & 2) {
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.child = _t.first);
-    } }, decls: 12, vars: 3, consts: [["class", "pokedex-loading", 4, "ngIf"], [1, "pokedex-container"], [1, "pokedex-header"], [1, "header-elements"], ["src", "https://upload.wikimedia.org/wikipedia/commons/2/23/Pok%C3%A9_Ball.svg"], [3, "pokemonName"], [4, "ngIf"], [1, "pokedex-loading"], ["src", "https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif"], [1, "row"], ["class", "col-lg-3 col-md-3 col-sm-4 col-6", 4, "ngFor", "ngForOf"], [1, "loadMore-button-container"], [3, "click"], [1, "pokedex-footer"], ["href", "https://pokeapi.co/about", "target", "_blank"], [1, "col-lg-3", "col-md-3", "col-sm-4", "col-6"]], template: function PokedexComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 22, vars: 5, consts: [["class", "pokedex-loading", 4, "ngIf"], [1, "pokedex-container"], [1, "pokedex-header"], [1, "header-elements"], ["src", "https://upload.wikimedia.org/wikipedia/commons/2/23/Pok%C3%A9_Ball.svg"], [1, "poke-filters"], [1, "row"], [3, "formGroup"], [1, "col-12"], ["type", "text", "formControlName", "name"], [3, "click"], ["class", "row", 4, "ngIf"], [1, "selected-poke-modal"], [3, "pokemonName"], [4, "ngIf"], [1, "pokedex-loading"], ["src", "https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif"], [2, "color", "red"], ["class", "col-lg-3 col-md-3 col-sm-4 col-6", 4, "ngFor", "ngForOf"], [1, "loadMore-button-container"], [1, "pokedex-footer"], ["href", "https://pokeapi.co/about", "target", "_blank"], [1, "col-lg-3", "col-md-3", "col-sm-4", "col-6"]], template: function PokedexComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, PokedexComponent_div_0_Template, 2, 0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
@@ -427,21 +456,42 @@ PokedexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, " filters ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "form", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Find by Name:");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](10, "app-pokemon-modal", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, PokedexComponent_div_11_Template, 14, 1, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](14, "input", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "button", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokedexComponent_Template_button_click_15_listener() { return ctx.findPokemonByName(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](16, "Find");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, PokedexComponent_div_17_Template, 3, 0, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](18, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "app-pokemon-modal", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, PokedexComponent_div_21_Template, 14, 1, "div", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.isLoading);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.form);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.pokemonList.length == 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("pokemonName", ctx.selectedPokemon);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.pokemonList);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_0__["PokemonModalComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_4__["PokemonCardComponent"]], styles: [".pokedex-container[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n\n.pokedex-loading[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  \n  z-index: 1;\n  \n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.9);\n  \n  overflow-x: hidden;\n  \n  transition: 0.5s;\n  \n}\n\n.pokedex-footer[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 0;\n  background-color: red;\n  width: 100%;\n  color: white;\n  text-align: center;\n}\n\n.loadMore-button-container[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n@media screen and (min-width: 850px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n\n@media screen and (max-width: 350px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n\n@media screen and (min-width: 351px) and (max-width: 849px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxwb2tlZGV4LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxrQkFBQTtBQUNKOztBQUVBO0VBQ0ksWUFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0VBQWlCLGtCQUFBO0VBQ2pCLFVBQUE7RUFBWSxlQUFBO0VBQ1osT0FBQTtFQUNBLE1BQUE7RUFDQSxvQ0FBQTtFQUFvQyxvQkFBQTtFQUNwQyxrQkFBQTtFQUFvQiw4QkFBQTtFQUNwQixnQkFBQTtFQUFrQiw4R0FBQTtBQU10Qjs7QUFIQTtFQUNJLGVBQUE7RUFDQSxTQUFBO0VBQ0EscUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBTUo7O0FBSEE7RUFDSSxrQkFBQTtBQU1KOztBQUFBO0VBQ0k7SUFDSSxxQkFBQTtJQUNBLFlBQUE7SUFDQSxZQUFBO0VBR047O0VBQUU7SUFDSSxXQUFBO0lBQ0EsWUFBQTtJQUNBLGtCQUFBO0lBQ0EsU0FBQTtJQUNBLFVBQUE7RUFHTjs7RUFBRTtJQUNJLGtCQUFBO0lBQ0EsU0FBQTtJQUNBLFVBQUE7SUFDQSxlQUFBO0VBR047QUFDRjs7QUFFQTtFQUNJO0lBQ0kscUJBQUE7SUFDQSxZQUFBO0lBQ0EsWUFBQTtFQUFOOztFQUdFO0lBQ0ksV0FBQTtJQUNBLFlBQUE7SUFDQSxrQkFBQTtJQUNBLFNBQUE7SUFDQSxVQUFBO0VBQU47O0VBR0U7SUFDSSxrQkFBQTtJQUNBLFNBQUE7SUFDQSxVQUFBO0lBQ0EsZUFBQTtFQUFOO0FBQ0Y7O0FBSUE7RUFDSTtJQUNJLHFCQUFBO0lBQ0EsWUFBQTtJQUNBLFlBQUE7RUFGTjs7RUFLRTtJQUNJLFdBQUE7SUFDQSxZQUFBO0lBQ0Esa0JBQUE7SUFDQSxTQUFBO0lBQ0EsVUFBQTtFQUZOOztFQUtFO0lBQ0ksa0JBQUE7SUFDQSxTQUFBO0lBQ0EsVUFBQTtJQUNBLGVBQUE7RUFGTjtBQUNGIiwiZmlsZSI6InBva2VkZXguY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucG9rZWRleC1jb250YWluZXIge1xyXG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59XHJcblxyXG4ucG9rZWRleC1sb2FkaW5nIGltZyB7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDsgLyogU3RheSBpbiBwbGFjZSAqL1xyXG4gICAgei1pbmRleDogMTsgLyogU2l0IG9uIHRvcCAqL1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsIDAuOSk7IC8qIEJsYWNrIHcvb3BhY2l0eSAqL1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuOyAvKiBEaXNhYmxlIGhvcml6b250YWwgc2Nyb2xsICovXHJcbiAgICB0cmFuc2l0aW9uOiAwLjVzOyAvKiAwLjUgc2Vjb25kIHRyYW5zaXRpb24gZWZmZWN0IHRvIHNsaWRlIGluIG9yIHNsaWRlIGRvd24gdGhlIG92ZXJsYXkgKGhlaWdodCBvciB3aWR0aCwgZGVwZW5kaW5nIG9uIHJldmVhbCkgKi9cclxufVxyXG5cclxuLnBva2VkZXgtZm9vdGVyIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4ubG9hZE1vcmUtYnV0dG9uLWNvbnRhaW5lciB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcblxyXG5cclxuLy9EZXNrdG9wXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDg1MHB4KSB7XHJcbiAgICAucG9rZWRleC1oZWFkZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICAgICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICAgICAgaGVpZ2h0OiAxMHZoOyAgICAgICAgXHJcbiAgICB9XHJcblxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGltZyB7XHJcbiAgICAgICAgd2lkdGg6IDQwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICB0b3A6IDE1cHg7XHJcbiAgICAgICAgbGVmdDogMTVweDtcclxuICAgIH1cclxuICAgIFxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGg0IHtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAyMHB4O1xyXG4gICAgICAgIGxlZnQ6IDM1cHg7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lO1xyXG4gICAgfVxyXG5cclxufVxyXG5cclxuLy9TbWFydHBob25lXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM1MHB4KSB7XHJcbiAgICAucG9rZWRleC1oZWFkZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICAgICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICAgICAgaGVpZ2h0OiAxMHZoOyAgICAgICAgXHJcbiAgICB9XHJcblxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGltZyB7XHJcbiAgICAgICAgd2lkdGg6IDQwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICB0b3A6IDE1cHg7XHJcbiAgICAgICAgbGVmdDogMTVweDtcclxuICAgIH1cclxuICAgIFxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGg0IHtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAyMHB4O1xyXG4gICAgICAgIGxlZnQ6IDM1cHg7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lO1xyXG4gICAgfVxyXG59XHJcblxyXG4vL1RhYmxldFxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAzNTFweCkgYW5kIChtYXgtd2lkdGg6IDg0OXB4KSB7XHJcbiAgICAucG9rZWRleC1oZWFkZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICAgICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICAgICAgaGVpZ2h0OiAxMHZoOyAgICAgICAgXHJcbiAgICB9XHJcblxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGltZyB7XHJcbiAgICAgICAgd2lkdGg6IDQwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xyXG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICB0b3A6IDE1cHg7XHJcbiAgICAgICAgbGVmdDogMTVweDtcclxuICAgIH1cclxuICAgIFxyXG4gICAgLnBva2VkZXgtaGVhZGVyIGg0IHtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAyMHB4O1xyXG4gICAgICAgIGxlZnQ6IDM1cHg7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lO1xyXG4gICAgfVxyXG59XHJcbiJdfQ== */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵangular_packages_forms_forms_ba"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControlName"], _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_0__["PokemonModalComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_5__["PokemonCardComponent"]], styles: [".pokedex-container[_ngcontent-%COMP%] {\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n\n.pokedex-loading[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  \n  z-index: 1;\n  \n  left: 0;\n  top: 0;\n  background-color: rgba(0, 0, 0, 0.9);\n  \n  overflow-x: hidden;\n  \n  transition: 0.5s;\n  \n}\n\n.pokedex-footer[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 0;\n  background-color: red;\n  width: 100%;\n  color: white;\n  text-align: center;\n}\n\n.loadMore-button-container[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.poke-filters[_ngcontent-%COMP%] {\n  position: relative;\n  left: 5%;\n  top: 5px;\n}\n\n@media screen and (min-width: 850px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n\n@media screen and (max-width: 350px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n\n@media screen and (min-width: 351px) and (max-width: 849px) {\n  .pokedex-header[_ngcontent-%COMP%] {\n    background-color: red;\n    width: 100vw;\n    height: 10vh;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    position: relative;\n    top: 15px;\n    left: 15px;\n  }\n\n  .pokedex-header[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    position: relative;\n    top: 20px;\n    left: 35px;\n    display: inline;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxwb2tlZGV4LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxrQkFBQTtBQUNKOztBQUVBO0VBQ0ksWUFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0VBQWlCLGtCQUFBO0VBQ2pCLFVBQUE7RUFBWSxlQUFBO0VBQ1osT0FBQTtFQUNBLE1BQUE7RUFDQSxvQ0FBQTtFQUFvQyxvQkFBQTtFQUNwQyxrQkFBQTtFQUFvQiw4QkFBQTtFQUNwQixnQkFBQTtFQUFrQiw4R0FBQTtBQU10Qjs7QUFIQTtFQUNJLGVBQUE7RUFDQSxTQUFBO0VBQ0EscUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBTUo7O0FBSEE7RUFDSSxrQkFBQTtBQU1KOztBQU1BO0VBQ0ksa0JBQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtBQUhKOztBQVNBO0VBQ0k7SUFDSSxxQkFBQTtJQUNBLFlBQUE7SUFDQSxZQUFBO0VBTk47O0VBU0U7SUFDSSxXQUFBO0lBQ0EsWUFBQTtJQUNBLGtCQUFBO0lBQ0EsU0FBQTtJQUNBLFVBQUE7RUFOTjs7RUFTRTtJQUNJLGtCQUFBO0lBQ0EsU0FBQTtJQUNBLFVBQUE7SUFDQSxlQUFBO0VBTk47QUFDRjs7QUFXQTtFQUNJO0lBQ0kscUJBQUE7SUFDQSxZQUFBO0lBQ0EsWUFBQTtFQVROOztFQVlFO0lBQ0ksV0FBQTtJQUNBLFlBQUE7SUFDQSxrQkFBQTtJQUNBLFNBQUE7SUFDQSxVQUFBO0VBVE47O0VBWUU7SUFDSSxrQkFBQTtJQUNBLFNBQUE7SUFDQSxVQUFBO0lBQ0EsZUFBQTtFQVROO0FBQ0Y7O0FBYUE7RUFDSTtJQUNJLHFCQUFBO0lBQ0EsWUFBQTtJQUNBLFlBQUE7RUFYTjs7RUFjRTtJQUNJLFdBQUE7SUFDQSxZQUFBO0lBQ0Esa0JBQUE7SUFDQSxTQUFBO0lBQ0EsVUFBQTtFQVhOOztFQWNFO0lBQ0ksa0JBQUE7SUFDQSxTQUFBO0lBQ0EsVUFBQTtJQUNBLGVBQUE7RUFYTjtBQUNGIiwiZmlsZSI6InBva2VkZXguY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucG9rZWRleC1jb250YWluZXIge1xyXG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59XHJcblxyXG4ucG9rZWRleC1sb2FkaW5nIGltZyB7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDsgLyogU3RheSBpbiBwbGFjZSAqL1xyXG4gICAgei1pbmRleDogMTsgLyogU2l0IG9uIHRvcCAqL1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsIDAuOSk7IC8qIEJsYWNrIHcvb3BhY2l0eSAqL1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuOyAvKiBEaXNhYmxlIGhvcml6b250YWwgc2Nyb2xsICovXHJcbiAgICB0cmFuc2l0aW9uOiAwLjVzOyAvKiAwLjUgc2Vjb25kIHRyYW5zaXRpb24gZWZmZWN0IHRvIHNsaWRlIGluIG9yIHNsaWRlIGRvd24gdGhlIG92ZXJsYXkgKGhlaWdodCBvciB3aWR0aCwgZGVwZW5kaW5nIG9uIHJldmVhbCkgKi9cclxufVxyXG5cclxuLnBva2VkZXgtZm9vdGVyIHtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4ubG9hZE1vcmUtYnV0dG9uLWNvbnRhaW5lciB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5zZWxlY3RlZC1wb2tlLW1vZGFsIHtcclxuICAgIC8vIHdpZHRoOiAxMDAlO1xyXG4gICAgLy8gcG9zaXRpb246IGZpeGVkOyAvKiBTdGF5IGluIHBsYWNlICovXHJcbiAgICAvLyB6LWluZGV4OiAxOyAvKiBTaXQgb24gdG9wICovXHJcbiAgICAvLyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLCAwLjkpOyAvKiBCbGFjayB3L29wYWNpdHkgKi9cclxuICAgIC8vIG92ZXJmbG93LXg6IGhpZGRlbjsgLyogRGlzYWJsZSBob3Jpem9udGFsIHNjcm9sbCAqL1xyXG4gICAgLy8gdHJhbnNpdGlvbjogMC41cztcclxufVxyXG5cclxuLnBva2UtZmlsdGVycyB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBsZWZ0OiA1JTtcclxuICAgIHRvcDogNXB4O1xyXG59XHJcblxyXG5cclxuXHJcbi8vRGVza3RvcFxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA4NTBweCkge1xyXG4gICAgLnBva2VkZXgtaGVhZGVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgICAgIGhlaWdodDogMTB2aDsgICAgICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5wb2tlZGV4LWhlYWRlciBpbWcge1xyXG4gICAgICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgICAgIGhlaWdodDogNDBweDtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAxNXB4O1xyXG4gICAgICAgIGxlZnQ6IDE1cHg7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIC5wb2tlZGV4LWhlYWRlciBoNCB7XHJcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgIHRvcDogMjBweDtcclxuICAgICAgICBsZWZ0OiAzNXB4O1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgIH1cclxuXHJcbn1cclxuXHJcbi8vU21hcnRwaG9uZVxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAzNTBweCkge1xyXG4gICAgLnBva2VkZXgtaGVhZGVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgICAgIGhlaWdodDogMTB2aDsgICAgICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5wb2tlZGV4LWhlYWRlciBpbWcge1xyXG4gICAgICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgICAgIGhlaWdodDogNDBweDtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAxNXB4O1xyXG4gICAgICAgIGxlZnQ6IDE1cHg7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIC5wb2tlZGV4LWhlYWRlciBoNCB7XHJcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgIHRvcDogMjBweDtcclxuICAgICAgICBsZWZ0OiAzNXB4O1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgIH1cclxufVxyXG5cclxuLy9UYWJsZXRcclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMzUxcHgpIGFuZCAobWF4LXdpZHRoOiA4NDlweCkge1xyXG4gICAgLnBva2VkZXgtaGVhZGVyIHtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgICAgIGhlaWdodDogMTB2aDsgICAgICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5wb2tlZGV4LWhlYWRlciBpbWcge1xyXG4gICAgICAgIHdpZHRoOiA0MHB4O1xyXG4gICAgICAgIGhlaWdodDogNDBweDtcclxuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgdG9wOiAxNXB4O1xyXG4gICAgICAgIGxlZnQ6IDE1cHg7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIC5wb2tlZGV4LWhlYWRlciBoNCB7XHJcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgICAgIHRvcDogMjBweDtcclxuICAgICAgICBsZWZ0OiAzNXB4O1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgIH1cclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
@@ -967,7 +1017,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pokedex_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pokedex.component */ "2qPM");
 /* harmony import */ var _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pokemon-card/pokemon-card.component */ "QxeF");
 /* harmony import */ var _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pokemon-modal/pokemon-modal.component */ "h0qC");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 
 
@@ -976,13 +1028,17 @@ __webpack_require__.r(__webpack_exports__);
 class PokedexModule {
 }
 PokedexModule.ɵfac = function PokedexModule_Factory(t) { return new (t || PokedexModule)(); };
-PokedexModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: PokedexModule });
-PokedexModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ providers: [], imports: [[
+PokedexModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({ type: PokedexModule });
+PokedexModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ providers: [], imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](PokedexModule, { declarations: [_pokedex_component__WEBPACK_IMPORTED_MODULE_1__["PokedexComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](PokedexModule, { declarations: [_pokedex_component__WEBPACK_IMPORTED_MODULE_1__["PokedexComponent"],
         _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_2__["PokemonCardComponent"],
-        _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_3__["PokemonModalComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]], exports: [_pokedex_component__WEBPACK_IMPORTED_MODULE_1__["PokedexComponent"],
+        _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_3__["PokemonModalComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]], exports: [_pokedex_component__WEBPACK_IMPORTED_MODULE_1__["PokedexComponent"],
         _pokemon_card_pokemon_card_component__WEBPACK_IMPORTED_MODULE_2__["PokemonCardComponent"],
         _pokemon_modal_pokemon_modal_component__WEBPACK_IMPORTED_MODULE_3__["PokemonModalComponent"]] }); })();
 
@@ -3644,29 +3700,31 @@ CadastroReceitaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "Sy1n");
-/* harmony import */ var _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./portfolio/components/experiencias/experiencias.module */ "IS7a");
-/* harmony import */ var _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./portfolio/components/shared/menu/menu.module */ "Cm5d");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "R1ws");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "1kSV");
-/* harmony import */ var _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./portfolio/components/projetos/projetos.module */ "kzHd");
-/* harmony import */ var _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./portfolio/components/contato/contato.module */ "SqlA");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
-/* harmony import */ var _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./projects/champion-select/champion-select.module */ "bjlp");
-/* harmony import */ var _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./projects/revelation-tea/revelation-tea.module */ "Akfa");
-/* harmony import */ var _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./portfolio/components/admin/admin.module */ "JJtR");
-/* harmony import */ var _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./portfolio/components/shared/simple-table/simple-table.module */ "dVYp");
-/* harmony import */ var _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./portfolio/components/main-page/main-page.module */ "vHFg");
-/* harmony import */ var _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./portfolio/components/shared/simple-add-form/simple-add-form.module */ "gnmp");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./projects/to-do-list/to-do-list.module */ "MfyS");
-/* harmony import */ var _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./projects/chat-inbox/chat-inbox.module */ "om6U");
-/* harmony import */ var _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./projects/marvel-app/marvel-app.module */ "4sck");
-/* harmony import */ var _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./projects/receitas-meyry/receitas-meyry.module */ "A67h");
-/* harmony import */ var _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./projects/super-trunfo/super-trunfo.module */ "DC9p");
-/* harmony import */ var _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./projects/pokedex/pokedex.module */ "D06V");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./portfolio/components/experiencias/experiencias.module */ "IS7a");
+/* harmony import */ var _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./portfolio/components/shared/menu/menu.module */ "Cm5d");
+/* harmony import */ var _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./portfolio/components/projetos/projetos.module */ "kzHd");
+/* harmony import */ var _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./portfolio/components/contato/contato.module */ "SqlA");
+/* harmony import */ var _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./projects/champion-select/champion-select.module */ "bjlp");
+/* harmony import */ var _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./projects/revelation-tea/revelation-tea.module */ "Akfa");
+/* harmony import */ var _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./portfolio/components/admin/admin.module */ "JJtR");
+/* harmony import */ var _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./portfolio/components/shared/simple-table/simple-table.module */ "dVYp");
+/* harmony import */ var _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./portfolio/components/main-page/main-page.module */ "vHFg");
+/* harmony import */ var _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./portfolio/components/shared/simple-add-form/simple-add-form.module */ "gnmp");
+/* harmony import */ var _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./projects/to-do-list/to-do-list.module */ "MfyS");
+/* harmony import */ var _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./projects/chat-inbox/chat-inbox.module */ "om6U");
+/* harmony import */ var _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./projects/marvel-app/marvel-app.module */ "4sck");
+/* harmony import */ var _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./projects/receitas-meyry/receitas-meyry.module */ "A67h");
+/* harmony import */ var _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./projects/super-trunfo/super-trunfo.module */ "DC9p");
+/* harmony import */ var _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./projects/pokedex/pokedex.module */ "D06V");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 
 
@@ -3694,57 +3752,59 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵdefineInjector"]({ providers: [], imports: [[
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_24__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_24__["ɵɵdefineInjector"]({ providers: [], imports: [[
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ReactiveFormsModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"],
-            _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
-            _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_3__["ExperienciasModule"],
-            _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_6__["ProjetosModule"],
-            _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_7__["ContatoModule"],
-            _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_10__["ChampionSelectModule"],
-            _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_11__["RevelationTeaModule"],
-            _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_12__["AdminModule"],
-            _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_14__["MainPageModule"],
+            _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_9__["MenuModule"],
+            _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_8__["ExperienciasModule"],
+            _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_10__["ProjetosModule"],
+            _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_11__["ContatoModule"],
+            _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_12__["ChampionSelectModule"],
+            _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_13__["RevelationTeaModule"],
+            _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_14__["AdminModule"],
+            _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_16__["MainPageModule"],
             //projects
-            _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_17__["ToDoListModule"],
-            _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_18__["ChatInboxModule"],
-            _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_19__["MarvelAppModule"],
-            _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_20__["ReceitasMeyryModule"],
-            _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_21__["SuperTrunfoModule"],
-            _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_22__["PokedexModule"],
+            _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_18__["ToDoListModule"],
+            _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_19__["ChatInboxModule"],
+            _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_20__["MarvelAppModule"],
+            _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_21__["ReceitasMeyryModule"],
+            _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_22__["SuperTrunfoModule"],
+            _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_23__["PokedexModule"],
             //shared components
-            _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_13__["SimpleTableModule"],
-            _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_15__["SimpleAddFormModule"]
+            _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_15__["SimpleTableModule"],
+            _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_17__["SimpleAddFormModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]], imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_24__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]], imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ReactiveFormsModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
         _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"],
-        _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
-        _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_3__["ExperienciasModule"],
-        _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_6__["ProjetosModule"],
-        _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_7__["ContatoModule"],
-        _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_10__["ChampionSelectModule"],
-        _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_11__["RevelationTeaModule"],
-        _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_12__["AdminModule"],
-        _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_14__["MainPageModule"],
+        _portfolio_components_shared_menu_menu_module__WEBPACK_IMPORTED_MODULE_9__["MenuModule"],
+        _portfolio_components_experiencias_experiencias_module__WEBPACK_IMPORTED_MODULE_8__["ExperienciasModule"],
+        _portfolio_components_projetos_projetos_module__WEBPACK_IMPORTED_MODULE_10__["ProjetosModule"],
+        _portfolio_components_contato_contato_module__WEBPACK_IMPORTED_MODULE_11__["ContatoModule"],
+        _projects_champion_select_champion_select_module__WEBPACK_IMPORTED_MODULE_12__["ChampionSelectModule"],
+        _projects_revelation_tea_revelation_tea_module__WEBPACK_IMPORTED_MODULE_13__["RevelationTeaModule"],
+        _portfolio_components_admin_admin_module__WEBPACK_IMPORTED_MODULE_14__["AdminModule"],
+        _portfolio_components_main_page_main_page_module__WEBPACK_IMPORTED_MODULE_16__["MainPageModule"],
         //projects
-        _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_17__["ToDoListModule"],
-        _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_18__["ChatInboxModule"],
-        _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_19__["MarvelAppModule"],
-        _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_20__["ReceitasMeyryModule"],
-        _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_21__["SuperTrunfoModule"],
-        _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_22__["PokedexModule"],
+        _projects_to_do_list_to_do_list_module__WEBPACK_IMPORTED_MODULE_18__["ToDoListModule"],
+        _projects_chat_inbox_chat_inbox_module__WEBPACK_IMPORTED_MODULE_19__["ChatInboxModule"],
+        _projects_marvel_app_marvel_app_module__WEBPACK_IMPORTED_MODULE_20__["MarvelAppModule"],
+        _projects_receitas_meyry_receitas_meyry_module__WEBPACK_IMPORTED_MODULE_21__["ReceitasMeyryModule"],
+        _projects_super_trunfo_super_trunfo_module__WEBPACK_IMPORTED_MODULE_22__["SuperTrunfoModule"],
+        _projects_pokedex_pokedex_module__WEBPACK_IMPORTED_MODULE_23__["PokedexModule"],
         //shared components
-        _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_13__["SimpleTableModule"],
-        _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_15__["SimpleAddFormModule"]] }); })();
+        _portfolio_components_shared_simple_table_simple_table_module__WEBPACK_IMPORTED_MODULE_15__["SimpleTableModule"],
+        _portfolio_components_shared_simple_add_form_simple_add_form_module__WEBPACK_IMPORTED_MODULE_17__["SimpleAddFormModule"]] }); })();
 
 
 /***/ }),
@@ -3863,183 +3923,250 @@ SimpleAddFormModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefi
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PokemonModalComponent", function() { return PokemonModalComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _services_pokedex_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/pokedex.service */ "tYiL");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/animations */ "R0Ic");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _services_pokedex_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/pokedex.service */ "tYiL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
-function PokemonModalComponent_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+function PokemonModalComponent_div_0_div_2_img_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "img", 11);
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r1.selectedPokemon.sprites.front_default, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r5.selectedPokemon.sprites.front_default, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
 } }
-function PokemonModalComponent_div_1_div_2_div_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "titlecase");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_div_2_img_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "img", 11);
 } if (rf & 2) {
-    const ability_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 1, ability_r6.ability.name));
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r6.selectedPokemon.sprites.back_default, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
 } }
-function PokemonModalComponent_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h5");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Abilities: ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, PokemonModalComponent_div_1_div_2_div_7_Template, 4, 3, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_div_2_img_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "img", 11);
 } if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Height: ", ctx_r2.selectedPokemon.height, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Weight: ", ctx_r2.selectedPokemon.weight, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r2.selectedPokemon.abilities);
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r7.selectedPokemon.sprites.front_shiny, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
 } }
-function PokemonModalComponent_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_div_2_img_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "img", 11);
 } if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("HP: ", ctx_r3.selectedPokemon.stats[0].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[0].base_stat / 2, "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Atk: ", ctx_r3.selectedPokemon.stats[1].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[1].base_stat / 2, "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Def: ", ctx_r3.selectedPokemon.stats[2].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[2].base_stat / 2, "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("SpA: ", ctx_r3.selectedPokemon.stats[3].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[3].base_stat / 2, "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("SpD: ", ctx_r3.selectedPokemon.stats[4].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[4].base_stat / 2, "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Spe: ", ctx_r3.selectedPokemon.stats[5].base_stat, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[5].base_stat / 2, "%");
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r8.selectedPokemon.sprites.back_shiny, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+} }
+function PokemonModalComponent_div_0_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokemonModalComponent_div_0_div_2_Template_div_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r10); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r9.changeSprite(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, PokemonModalComponent_div_0_div_2_img_2_Template, 1, 1, "img", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, PokemonModalComponent_div_0_div_2_img_3_Template, 1, 1, "img", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, PokemonModalComponent_div_0_div_2_img_4_Template, 1, 1, "img", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, PokemonModalComponent_div_0_div_2_img_5_Template, 1, 1, "img", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "h5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](8, "titlecase");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](9, "hr");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.currentSprite == 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.currentSprite == 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.currentSprite == 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.currentSprite == 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](8, 5, ctx_r1.selectedPokemon.name), " ");
+} }
+function PokemonModalComponent_div_0_div_3_div_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](3, "titlecase");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ability_r12 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](3, 1, ability_r12.ability.name));
+} }
+function PokemonModalComponent_div_0_div_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h4");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Info");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "h5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "Abilities: ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, PokemonModalComponent_div_0_div_3_div_9_Template, 4, 3, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Height: ", ctx_r2.selectedPokemon.height, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Weight: ", ctx_r2.selectedPokemon.weight, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.selectedPokemon.abilities);
+} }
+function PokemonModalComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h4");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Stats");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](10, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](14, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](18, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](22, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](26, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("HP: ", ctx_r3.selectedPokemon.stats[0].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[0].base_stat / 2, "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Atk: ", ctx_r3.selectedPokemon.stats[1].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[1].base_stat / 2, "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Def: ", ctx_r3.selectedPokemon.stats[2].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[2].base_stat / 2, "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("SpA: ", ctx_r3.selectedPokemon.stats[3].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[3].base_stat / 2, "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("SpD: ", ctx_r3.selectedPokemon.stats[4].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[4].base_stat / 2, "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Spe: ", ctx_r3.selectedPokemon.stats[5].base_stat, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r3.selectedPokemon.stats[5].base_stat / 2, "%");
 } }
 const _c0 = function (a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17) { return { "grass-type": a0, "fire-type": a1, "water-type": a2, "bug-type": a3, "flying-type": a4, "poison-type": a5, "normal-type": a6, "fighting-type": a7, "electric-type": a8, "rock-type": a9, "ground-type": a10, "psychic-type": a11, "ice-type": a12, "dragon-type": a13, "ghost-type": a14, "dark-type": a15, "iron-type": a16, "fairy-type": a17 }; };
-function PokemonModalComponent_div_1_div_4_div_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "titlecase");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u00A0 ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_div_5_div_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "span", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](3, "titlecase");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "\u00A0 ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const type_r8 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunctionV"](4, _c0, [type_r8.type.name == "grass", type_r8.type.name == "fire", type_r8.type.name == "water", type_r8.type.name == "bug", type_r8.type.name == "flying", type_r8.type.name == "poison", type_r8.type.name == "normal", type_r8.type.name == "fighting", type_r8.type.name == "electric", type_r8.type.name == "rock", type_r8.type.name == "ground", type_r8.type.name == "psychic", type_r8.type.name == "ice", type_r8.type.name == "dragon", type_r8.type.name == "ghost", type_r8.type.name == "dark", type_r8.type.name == "iron", type_r8.type.name == "fairy"]));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" \u00A0\u00A0", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, type_r8.type.name), "\u00A0\u00A0 ");
+    const type_r14 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunctionV"](4, _c0, [type_r14.type.name == "grass", type_r14.type.name == "fire", type_r14.type.name == "water", type_r14.type.name == "bug", type_r14.type.name == "flying", type_r14.type.name == "poison", type_r14.type.name == "normal", type_r14.type.name == "fighting", type_r14.type.name == "electric", type_r14.type.name == "rock", type_r14.type.name == "ground", type_r14.type.name == "psychic", type_r14.type.name == "ice", type_r14.type.name == "dragon", type_r14.type.name == "ghost", type_r14.type.name == "dark", type_r14.type.name == "iron", type_r14.type.name == "fairy"]));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" \u00A0\u00A0", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](3, 2, type_r14.type.name), "\u00A0\u00A0 ");
 } }
-function PokemonModalComponent_div_1_div_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h4");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Type");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, PokemonModalComponent_div_1_div_4_div_4_Template, 5, 23, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h4");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Weaknesses");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h4");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Type");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, PokemonModalComponent_div_0_div_5_div_3_Template, 5, 23, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.selectedPokemon.types);
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r4.selectedPokemon.types);
 } }
-function PokemonModalComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PokemonModalComponent_div_1_div_1_Template, 2, 1, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PokemonModalComponent_div_1_div_2_Template, 8, 3, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, PokemonModalComponent_div_1_div_3_Template, 25, 18, "div", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, PokemonModalComponent_div_1_div_4_Template, 7, 1, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function PokemonModalComponent_div_0_Template(rf, ctx) { if (rf & 1) {
+    const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, PokemonModalComponent_div_0_div_2_Template, 10, 7, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, PokemonModalComponent_div_0_div_3_Template, 10, 3, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, PokemonModalComponent_div_0_div_4_Template, 27, 18, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, PokemonModalComponent_div_0_div_5_Template, 4, 1, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "button", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function PokemonModalComponent_div_0_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r16); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r15.closeModal(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "Close");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("@inOutAnimation", undefined);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.selectedPokemon);
 } }
 class PokemonModalComponent {
     constructor(pokedexService) {
         this.pokedexService = pokedexService;
         this.isShowingModal = false;
+        this.currentSprite = 0;
     }
     ngOnInit() {
     }
     showModal(pokemon) {
-        this.isShowingModal = !this.isShowingModal;
-        if (this.isShowingModal) {
-            this.findPokemonByName(pokemon);
+        this.isShowingModal = true;
+        this.findPokemonByName(pokemon);
+    }
+    closeModal() {
+        this.isShowingModal = false;
+    }
+    changeSprite() {
+        if (this.currentSprite != 3) {
+            this.currentSprite++;
+        }
+        else {
+            this.currentSprite = 0;
         }
     }
     findPokemonByName(pokemon) {
@@ -4056,24 +4183,31 @@ class PokemonModalComponent {
         const types = dados.types;
         types.forEach(element => {
             this.pokedexService.getWeaknessesByTypeName(element.type.name).subscribe((dados) => {
-                // console.log(dados);
-                // weakness.push(dados['damage_relations']);
-                console.log(dados['damage_relations']);
+                // console.log(dados['damage_relations']);
             }, (e) => {
                 console.log(e);
             });
         });
     }
 }
-PokemonModalComponent.ɵfac = function PokemonModalComponent_Factory(t) { return new (t || PokemonModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_pokedex_service__WEBPACK_IMPORTED_MODULE_1__["PokedexService"])); };
-PokemonModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PokemonModalComponent, selectors: [["app-pokemon-modal"]], inputs: { pokemonName: "pokemonName" }, decls: 2, vars: 2, consts: [["class", "pokemodal-container", 4, "ngIf"], [1, "pokemodal-container"], ["class", "poke-images-container", 4, "ngIf"], ["class", "poke-info-container", 4, "ngIf"], ["class", "poke-stats-container", 4, "ngIf"], ["class", "poke-typeinfo-container", 4, "ngIf"], [1, "poke-images-container"], [3, "src"], [1, "poke-info-container"], [4, "ngFor", "ngForOf"], [1, "poke-stats-container"], [1, "stat-percentage-container"], [1, "stat-bar"], [1, "poke-typeinfo-container"], [1, "poke-types-container"], ["class", "types", 4, "ngFor", "ngForOf"], [1, "types"], [3, "ngClass"]], template: function PokemonModalComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PokemonModalComponent_div_1_Template, 5, 4, "div", 0);
+PokemonModalComponent.ɵfac = function PokemonModalComponent_Factory(t) { return new (t || PokemonModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_pokedex_service__WEBPACK_IMPORTED_MODULE_2__["PokedexService"])); };
+PokemonModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: PokemonModalComponent, selectors: [["app-pokemon-modal"]], inputs: { pokemonName: "pokemonName" }, decls: 2, vars: 1, consts: [["class", "pokemodal-container", 4, "ngIf"], [1, "pokemodal-container"], [1, "row"], ["class", "col-lg-6 col-md-6 col-sm-6 col-12 poke-images-container", 3, "click", 4, "ngIf"], ["class", "col-lg-6 col-md-6 col-sm-6 col-12 poke-info-container", 4, "ngIf"], ["class", "col-lg-6 col-md-6 col-sm-6 col-12 poke-stats-container", 4, "ngIf"], ["class", "col-lg-6 col-md-6 col-sm-6 col-12 poke-typeinfo-container", 4, "ngIf"], [1, "button-container"], [3, "click"], [1, "col-lg-6", "col-md-6", "col-sm-6", "col-12", "poke-images-container", 3, "click"], [3, "src", 4, "ngIf"], [3, "src"], [1, "col-lg-6", "col-md-6", "col-sm-6", "col-12", "poke-info-container"], [4, "ngFor", "ngForOf"], [1, "col-lg-6", "col-md-6", "col-sm-6", "col-12", "poke-stats-container"], [1, "stat-percentage-container"], [1, "stat-bar"], [1, "col-lg-6", "col-md-6", "col-sm-6", "col-12", "poke-typeinfo-container"], ["class", "types", 4, "ngFor", "ngForOf"], [1, "types"], [3, "ngClass"]], template: function PokemonModalComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, PokemonModalComponent_div_0_Template, 9, 5, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "hr");
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx.pokemonName, "\n");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isShowingModal);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["TitleCasePipe"]], styles: [".pokemodal-container[_ngcontent-%COMP%] {\n  background-color: red;\n  width: 100%;\n  height: 50vh;\n}\n\n.poke-images-container[_ngcontent-%COMP%] {\n  background-color: gray;\n  width: 50%;\n  height: 50%;\n  display: inline-block;\n}\n\n.poke-info-container[_ngcontent-%COMP%] {\n  background-color: #c1c1f5;\n  width: 50%;\n  height: 50%;\n  display: inline-block;\n  padding: 2%;\n}\n\n.poke-info-container[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-left: 5%;\n}\n\n.poke-info-container[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  margin-left: 5%;\n}\n\n.poke-stats-container[_ngcontent-%COMP%] {\n  background-color: #779292;\n  width: 50%;\n  height: 50%;\n  display: inline-block;\n}\n\n.stat-percentage-container[_ngcontent-%COMP%] {\n  height: 12px;\n  position: relative;\n  left: 5%;\n  top: 15%;\n}\n\n.stat-bar[_ngcontent-%COMP%] {\n  background-color: #40c6ef;\n  height: 6px;\n  border-radius: 10px;\n  position: relative;\n  top: -20px;\n  left: 45px;\n  border-radius: 10px 0 0 10px;\n}\n\n.poke-typeinfo-container[_ngcontent-%COMP%] {\n  background-color: yellow;\n  width: 50%;\n  height: 50%;\n  display: inline-block;\n}\n\n.poke-types-container[_ngcontent-%COMP%] {\n  display: inline-block;\n  position: relative;\n  left: 5%;\n  top: 10%;\n}\n\n.types[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n\n.grass-type[_ngcontent-%COMP%] {\n  background-color: #9bcc50;\n  border-radius: 5px;\n}\n\n.fire-type[_ngcontent-%COMP%] {\n  background-color: red;\n  border-radius: 5px;\n  color: white;\n}\n\n.water-type[_ngcontent-%COMP%] {\n  background-color: blue;\n  border-radius: 5px;\n  color: white;\n}\n\n.bug-type[_ngcontent-%COMP%] {\n  background-color: #729f3f;\n  border-radius: 5px;\n  color: white;\n}\n\n.flying-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);\n  background-color: #3dc7ef;\n  border-radius: 5px;\n}\n\n.poison-type[_ngcontent-%COMP%] {\n  background-color: purple;\n  border-radius: 5px;\n  color: white;\n}\n\n.normal-type[_ngcontent-%COMP%] {\n  background-color: #a4acaf;\n  border-radius: 5px;\n}\n\n.fighting-type[_ngcontent-%COMP%] {\n  background-color: #d56723;\n  color: white;\n  border-radius: 5px;\n}\n\n.electric-type[_ngcontent-%COMP%] {\n  background-color: #eed535;\n  border-radius: 5px;\n}\n\n.rock-type[_ngcontent-%COMP%] {\n  background-color: #a38c21;\n  color: white;\n  border-radius: 5px;\n}\n\n.ground-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);\n  background-color: #f7de3f;\n  border-radius: 5px;\n}\n\n.psychic-type[_ngcontent-%COMP%] {\n  background-color: #f366b9;\n  color: white;\n  border-radius: 5px;\n}\n\n.ice-type[_ngcontent-%COMP%] {\n  background-color: #51c4e7;\n  border-radius: 5px;\n}\n\n.dragon-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);\n  background-color: #53a4cf;\n  color: #fff;\n  border-radius: 5px;\n}\n\n.ghost-type[_ngcontent-%COMP%] {\n  background-color: #7b62a3;\n  color: white;\n  border-radius: 5px;\n}\n\n.dark-type[_ngcontent-%COMP%] {\n  background-color: #707070;\n  color: white;\n  border-radius: 5px;\n}\n\n.iron-type[_ngcontent-%COMP%] {\n  background-color: #9eb7b8;\n  border-radius: 5px;\n}\n\n.fairy-type[_ngcontent-%COMP%] {\n  background-color: #fdb9e9;\n  border-radius: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxccG9rZW1vbi1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHFCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUFDSjs7QUFFQTtFQUNJLHNCQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7RUFDQSxxQkFBQTtBQUNKOztBQUVBO0VBQ0kseUJBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLHFCQUFBO0VBQ0EsV0FBQTtBQUNKOztBQUVBO0VBQ0kscUJBQUE7RUFDQSxlQUFBO0FBQ0o7O0FBRUE7RUFDSSxlQUFBO0FBQ0o7O0FBRUE7RUFDSSx5QkFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0VBQ0EscUJBQUE7QUFDSjs7QUFFQTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxRQUFBO0FBQ0o7O0FBRUE7RUFDSSx5QkFBQTtFQUNBLFdBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFVBQUE7RUFDQSw0QkFBQTtBQUNKOztBQUVBO0VBQ0ksd0JBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLHFCQUFBO0FBQ0o7O0FBRUE7RUFDSSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsUUFBQTtFQUNBLFFBQUE7QUFDSjs7QUFFQTtFQUNJLHFCQUFBO0FBQ0o7O0FBYUE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0FBVko7O0FBYUE7RUFDSSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQVZKOztBQWFBO0VBQ0ksc0JBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7QUFWSjs7QUFhQTtFQUNJLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0FBVko7O0FBYUE7RUFDSSw2REFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7QUFWSjs7QUFhQTtFQUNJLHdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0FBVko7O0FBYUE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0FBVko7O0FBYUE7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQVZKOztBQWFBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQVZKOztBQWFBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFWSjs7QUFhQTtFQUNJLDZEQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtBQVZKOztBQWFBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFWSjs7QUFhQTtFQUNJLHlCQUFBO0VBQ0Esa0JBQUE7QUFWSjs7QUFhQTtFQUNJLDZEQUFBO0VBQ0EseUJBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUFWSjs7QUFhQTtFQUNJLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBVko7O0FBYUE7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQVZKOztBQWFBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQVZKOztBQWFBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQVZKIiwiZmlsZSI6InBva2Vtb24tbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucG9rZW1vZGFsLWNvbnRhaW5lciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNTB2aDtcclxufVxyXG5cclxuLnBva2UtaW1hZ2VzLWNvbnRhaW5lciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBncmF5O1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIGhlaWdodDogNTAlOyBcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsgICBcclxufVxyXG5cclxuLnBva2UtaW5mby1jb250YWluZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE5MywgMTkzLCAyNDUpO1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIGhlaWdodDogNTAlO1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgcGFkZGluZzogMiU7XHJcbn1cclxuXHJcbi5wb2tlLWluZm8tY29udGFpbmVyIHAge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUlO1xyXG59XHJcblxyXG4ucG9rZS1pbmZvLWNvbnRhaW5lciBoNSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNSU7XHJcbn1cclxuXHJcbi5wb2tlLXN0YXRzLWNvbnRhaW5lciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTE5LCAxNDYsIDE0Nik7XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgaGVpZ2h0OiA1MCU7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuXHJcbi5zdGF0LXBlcmNlbnRhZ2UtY29udGFpbmVyIHtcclxuICAgIGhlaWdodDogMTJweDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDUlO1xyXG4gICAgdG9wOiAxNSU7XHJcbn1cclxuXHJcbi5zdGF0LWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDBjNmVmO1xyXG4gICAgaGVpZ2h0OiA2cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdG9wOiAtMjBweDtcclxuICAgIGxlZnQ6IDQ1cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4IDAgMCAxMHB4O1xyXG59XHJcblxyXG4ucG9rZS10eXBlaW5mby1jb250YWluZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIGhlaWdodDogNTAlOyAgXHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7ICBcclxufVxyXG5cclxuLnBva2UtdHlwZXMtY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDUlO1xyXG4gICAgdG9wOiAxMCU7XHJcbn1cclxuXHJcbi50eXBlcyB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4vLyBQT0tFTU9OIFRZUEVTXHJcbi5ncmFzcy10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM5YmNjNTA7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5maXJlLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbn1cclxuXHJcbi53YXRlci10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxufVxyXG5cclxuLmJ1Zy10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM3MjlmM2Y7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBjb2xvcjp3aGl0ZTsgXHJcbn1cclxuXHJcbi5mbHlpbmctdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAjM2RjN2VmIDUwJSwgI2JkYjliOCA1MCUpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzNkYzdlZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLnBvaXNvbi10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHB1cnBsZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgIGNvbG9yOndoaXRlOyBcclxufVxyXG5cclxuLm5vcm1hbC10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNhNGFjYWY7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5maWdodGluZy10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2Q1NjcyMztcclxuICAgIGNvbG9yOndoaXRlOyBcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmVsZWN0cmljLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZWVkNTM1O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4ucm9jay10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2EzOGMyMTtcclxuICAgIGNvbG9yOndoaXRlOyBcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmdyb3VuZC10eXBlIHtcclxuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxODBkZWcsICNmN2RlM2YgNTAlLCAjYWI5ODQyIDUwJSk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjdkZTNmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4ucHN5Y2hpYy10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2YzNjZiOTtcclxuICAgIGNvbG9yOndoaXRlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uaWNlLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojNTFjNGU3O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uZHJhZ29uLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE4MGRlZywgIzUzYTRjZiA1MCUsICNmMTZlNTcgNTAlKTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM1M2E0Y2Y7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmdob3N0LXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojN2I2MmEzO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uZGFyay10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IzcwNzA3MDtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmlyb24tdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM5ZWI3Yjg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5mYWlyeS10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2ZkYjllOTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufSJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.isShowingModal);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["TitleCasePipe"]], styles: [".pokemodal-container[_ngcontent-%COMP%] {\n  background-color: #efe8e8d6;\n  width: 80%;\n  height: 100%;\n  border: 1px solid black;\n  border-radius: 0 10px 10px 0;\n}\n\n.poke-images-container[_ngcontent-%COMP%] {\n  width: 50%;\n  height: 50%;\n  display: flex;\n  justify-content: center;\n}\n\n.poke-images-container[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  margin-left: 10%;\n}\n\n.poke-images-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n\n.poke-info-container[_ngcontent-%COMP%] {\n  width: 50%;\n  height: 50%;\n  padding: 1% 0 0 0;\n}\n\n.poke-info-container[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin-left: 5%;\n}\n\n.poke-info-container[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  margin-left: 5%;\n}\n\n.poke-stats-container[_ngcontent-%COMP%] {\n  width: 50%;\n  height: 50%;\n  position: relative;\n  left: 5%;\n}\n\n.poke-stats-container[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  margin-left: 5%;\n}\n\n.stat-percentage-container[_ngcontent-%COMP%] {\n  height: 12px;\n  position: relative;\n  left: 5%;\n  top: 15%;\n}\n\n.stat-bar[_ngcontent-%COMP%] {\n  background-color: #40c6ef;\n  height: 6px;\n  border-radius: 10px;\n  position: relative;\n  top: -20px;\n  left: 45px;\n  border-radius: 10px 0 0 10px;\n}\n\n.poke-types-container[_ngcontent-%COMP%] {\n  position: relative;\n  left: 5%;\n  top: 10%;\n}\n\n.types[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n\n@media screen and (max-width: 350px) {\n  .pokemodal-container[_ngcontent-%COMP%] {\n    background-color: #efe8e8d6;\n    width: 80%;\n    height: 100%;\n    border: 1px solid black;\n    border-radius: 0 10px 10px 0;\n    margin-bottom: 80%;\n  }\n\n  .poke-info-container[_ngcontent-%COMP%] {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    flex-direction: column;\n    text-align: center;\n  }\n\n  .poke-typeinfo-container[_ngcontent-%COMP%] {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    flex-direction: column;\n    text-align: center;\n  }\n}\n\n.grass-type[_ngcontent-%COMP%] {\n  background-color: #9bcc50;\n  border-radius: 5px;\n}\n\n.fire-type[_ngcontent-%COMP%] {\n  background-color: red;\n  border-radius: 5px;\n  color: white;\n}\n\n.water-type[_ngcontent-%COMP%] {\n  background-color: blue;\n  border-radius: 5px;\n  color: white;\n}\n\n.bug-type[_ngcontent-%COMP%] {\n  background-color: #729f3f;\n  border-radius: 5px;\n  color: white;\n}\n\n.flying-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);\n  background-color: #3dc7ef;\n  border-radius: 5px;\n}\n\n.poison-type[_ngcontent-%COMP%] {\n  background-color: purple;\n  border-radius: 5px;\n  color: white;\n}\n\n.normal-type[_ngcontent-%COMP%] {\n  background-color: #a4acaf;\n  border-radius: 5px;\n}\n\n.fighting-type[_ngcontent-%COMP%] {\n  background-color: #d56723;\n  color: white;\n  border-radius: 5px;\n}\n\n.electric-type[_ngcontent-%COMP%] {\n  background-color: #eed535;\n  border-radius: 5px;\n}\n\n.rock-type[_ngcontent-%COMP%] {\n  background-color: #a38c21;\n  color: white;\n  border-radius: 5px;\n}\n\n.ground-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);\n  background-color: #f7de3f;\n  border-radius: 5px;\n}\n\n.psychic-type[_ngcontent-%COMP%] {\n  background-color: #f366b9;\n  color: white;\n  border-radius: 5px;\n}\n\n.ice-type[_ngcontent-%COMP%] {\n  background-color: #51c4e7;\n  border-radius: 5px;\n}\n\n.dragon-type[_ngcontent-%COMP%] {\n  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);\n  background-color: #53a4cf;\n  color: #fff;\n  border-radius: 5px;\n}\n\n.ghost-type[_ngcontent-%COMP%] {\n  background-color: #7b62a3;\n  color: white;\n  border-radius: 5px;\n}\n\n.dark-type[_ngcontent-%COMP%] {\n  background-color: #707070;\n  color: white;\n  border-radius: 5px;\n}\n\n.iron-type[_ngcontent-%COMP%] {\n  background-color: #9eb7b8;\n  border-radius: 5px;\n}\n\n.fairy-type[_ngcontent-%COMP%] {\n  background-color: #fdb9e9;\n  border-radius: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxccG9rZW1vbi1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDJCQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtFQUNBLDRCQUFBO0FBQ0o7O0FBRUE7RUFFSSxVQUFBO0VBQ0EsV0FBQTtFQUVBLGFBQUE7RUFDQSx1QkFBQTtBQURKOztBQUlBO0VBQ0ksZ0JBQUE7QUFESjs7QUFJQTtFQUNJLGVBQUE7QUFESjs7QUFJQTtFQUVJLFVBQUE7RUFDQSxXQUFBO0VBQ0EsaUJBQUE7QUFGSjs7QUFLQTtFQUNJLGVBQUE7QUFGSjs7QUFLQTtFQUNJLGVBQUE7QUFGSjs7QUFLQTtFQUVJLFVBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0FBSEo7O0FBTUE7RUFDSSxlQUFBO0FBSEo7O0FBTUE7RUFDSSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtBQUhKOztBQU1BO0VBQ0kseUJBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxVQUFBO0VBQ0EsNEJBQUE7QUFISjs7QUFVQTtFQUNJLGtCQUFBO0VBQ0EsUUFBQTtFQUNBLFFBQUE7QUFQSjs7QUFVQTtFQUNJLHFCQUFBO0FBUEo7O0FBaUJBO0VBQ0k7SUFDSSwyQkFBQTtJQUNBLFVBQUE7SUFDQSxZQUFBO0lBRUEsdUJBQUE7SUFDQSw0QkFBQTtJQUVBLGtCQUFBO0VBaEJOOztFQW1CRTtJQUNJLGFBQUE7SUFDQSxlQUFBO0lBQ0EsdUJBQUE7SUFDQSxzQkFBQTtJQUNBLGtCQUFBO0VBaEJOOztFQW1CRTtJQUNJLGFBQUE7SUFDQSxlQUFBO0lBQ0EsdUJBQUE7SUFDQSxzQkFBQTtJQUNBLGtCQUFBO0VBaEJOO0FBQ0Y7O0FBdUJBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQXJCSjs7QUF3QkE7RUFDSSxzQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQXJCSjs7QUF3QkE7RUFDSSw2REFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7QUFyQko7O0FBd0JBO0VBQ0ksd0JBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7QUFyQko7O0FBd0JBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0FBckJKOztBQXdCQTtFQUNJLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBckJKOztBQXdCQTtFQUNJLDZEQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0FBckJKOztBQXdCQTtFQUNJLDZEQUFBO0VBQ0EseUJBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUFyQko7O0FBd0JBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFyQko7O0FBd0JBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFyQko7O0FBd0JBO0VBQ0kseUJBQUE7RUFDQSxrQkFBQTtBQXJCSjs7QUF3QkE7RUFDSSx5QkFBQTtFQUNBLGtCQUFBO0FBckJKIiwiZmlsZSI6InBva2Vtb24tbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucG9rZW1vZGFsLWNvbnRhaW5lciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWZlOGU4ZDY7XHJcbiAgICB3aWR0aDogODAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwIDEwcHggMTBweCAwO1xyXG59XHJcblxyXG4ucG9rZS1pbWFnZXMtY29udGFpbmVyIHtcclxuICAgIC8vIGJhY2tncm91bmQtY29sb3I6IGdyYXk7XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgaGVpZ2h0OiA1MCU7XHJcbiAgICBcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLnBva2UtaW1hZ2VzLWNvbnRhaW5lciBoNSB7XHJcbiAgICBtYXJnaW4tbGVmdDogMTAlO1xyXG59XHJcblxyXG4ucG9rZS1pbWFnZXMtY29udGFpbmVyIGltZzpob3ZlciB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuXHJcbi5wb2tlLWluZm8tY29udGFpbmVyIHtcclxuICAgIC8vIGJhY2tncm91bmQtY29sb3I6IHJnYigxOTMsIDE5MywgMjQ1KTtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBoZWlnaHQ6IDUwJTtcclxuICAgIHBhZGRpbmc6IDElIDAgMCAwO1xyXG59XHJcblxyXG4ucG9rZS1pbmZvLWNvbnRhaW5lciBwIHtcclxuICAgIG1hcmdpbi1sZWZ0OiA1JTtcclxufVxyXG5cclxuLnBva2UtaW5mby1jb250YWluZXIgaDUge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUlO1xyXG59XHJcblxyXG4ucG9rZS1zdGF0cy1jb250YWluZXIge1xyXG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogcmdiKDExOSwgMTQ2LCAxNDYpO1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIGhlaWdodDogNTAlO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgbGVmdDogNSU7XHJcbn1cclxuXHJcbi5wb2tlLXN0YXRzLWNvbnRhaW5lciBoNCB7XHJcbiAgICBtYXJnaW4tbGVmdDogNSU7XHJcbn1cclxuXHJcbi5zdGF0LXBlcmNlbnRhZ2UtY29udGFpbmVyIHtcclxuICAgIGhlaWdodDogMTJweDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDUlO1xyXG4gICAgdG9wOiAxNSU7XHJcbn1cclxuXHJcbi5zdGF0LWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDBjNmVmO1xyXG4gICAgaGVpZ2h0OiA2cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgdG9wOiAtMjBweDtcclxuICAgIGxlZnQ6IDQ1cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4IDAgMCAxMHB4O1xyXG59XHJcblxyXG4ucG9rZS10eXBlaW5mby1jb250YWluZXIge1xyXG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xyXG59XHJcblxyXG4ucG9rZS10eXBlcy1jb250YWluZXIge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgbGVmdDogNSU7XHJcbiAgICB0b3A6IDEwJTtcclxufVxyXG5cclxuLnR5cGVzIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG5cclxuLy9EZXNrdG9wXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDg1MHB4KSB7XHJcbiAgICBcclxufVxyXG5cclxuXHJcbi8vU21hcnRwaG9uZVxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAzNTBweCkge1xyXG4gICAgLnBva2Vtb2RhbC1jb250YWluZXIge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNlZmU4ZThkNjtcclxuICAgICAgICB3aWR0aDogODAlO1xyXG4gICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgIFxyXG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDAgMTBweCAxMHB4IDA7XHJcbiAgICBcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiA4MCU7XHJcbiAgICB9XHJcblxyXG4gICAgLnBva2UtaW5mby1jb250YWluZXIge1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG5cclxuICAgIC5wb2tlLXR5cGVpbmZvLWNvbnRhaW5lciB7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB9XHJcbn1cclxuXHJcblxyXG5cclxuXHJcbi8vIFBPS0VNT04gVFlQRVNcclxuLmdyYXNzLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzliY2M1MDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmZpcmUtdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxufVxyXG5cclxuLndhdGVyLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgIGNvbG9yOndoaXRlO1xyXG59XHJcblxyXG4uYnVnLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzcyOWYzZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgIGNvbG9yOndoaXRlOyBcclxufVxyXG5cclxuLmZseWluZy10eXBlIHtcclxuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxODBkZWcsICMzZGM3ZWYgNTAlLCAjYmRiOWI4IDUwJSk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2RjN2VmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4ucG9pc29uLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcHVycGxlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgY29sb3I6d2hpdGU7IFxyXG59XHJcblxyXG4ubm9ybWFsLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2E0YWNhZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmZpZ2h0aW5nLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZDU2NzIzO1xyXG4gICAgY29sb3I6d2hpdGU7IFxyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uZWxlY3RyaWMtdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNlZWQ1MzU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5yb2NrLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojYTM4YzIxO1xyXG4gICAgY29sb3I6d2hpdGU7IFxyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uZ3JvdW5kLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE4MGRlZywgI2Y3ZGUzZiA1MCUsICNhYjk4NDIgNTAlKTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmN2RlM2Y7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5wc3ljaGljLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZjM2NmI5O1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5pY2UtdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM1MWM0ZTc7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5kcmFnb24tdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAjNTNhNGNmIDUwJSwgI2YxNmU1NyA1MCUpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzUzYTRjZjtcclxuICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uZ2hvc3QtdHlwZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM3YjYyYTM7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5kYXJrLXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojNzA3MDcwO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uaXJvbi10eXBlIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IzllYjdiODtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLmZhaXJ5LXR5cGUge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZmRiOWU5O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4iXX0= */"], data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["trigger"])('inOutAnimation', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])(':enter', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ height: 0, opacity: 0 }),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ height: 300, opacity: 1 }))
+                ]),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])(':leave', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ height: 300, opacity: 1 }),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1s ease-in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ height: 0, opacity: 0 }))
+                ])
+            ])
+        ] } });
 
 
 /***/ }),
